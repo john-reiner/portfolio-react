@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css'
 
 import Landing from './components/Landing.js'
-import ProjectsContainer from './components/ProjectsContainer'
-import TechnologiesContainer from './components/TechnologiesContainer'
+import MainContent from './components/MainContent.js'
+
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="app" >
 
       <Landing 
         first_name={user.first_name} 
@@ -28,9 +28,9 @@ function App() {
         email={user.email}
         links={user.links}
       />
-      
-      <ProjectsContainer />
-      <TechnologiesContainer />
+
+      <MainContent />
+    
 
     </div>
   );
