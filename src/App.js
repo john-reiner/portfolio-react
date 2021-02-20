@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css'
 
 import Landing from './components/Landing.js'
 import ProjectsContainer from './components/ProjectsContainer'
