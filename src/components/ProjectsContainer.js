@@ -31,7 +31,7 @@ export default function ProjectsContainer() {
     const handleProjectClick = id => setProjectId(id)
 
     return (
-        <div>
+        <div className="glass" >
             <ProjectShow projectId={projectId} />
             <h2>My Projects</h2>
             {renderProjects()}

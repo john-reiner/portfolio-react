@@ -25,7 +25,7 @@ export default function TechnologiesContainer() {
     }
 
     return (
-        <div>
+        <div className="glass">
             <h2>Technologies I Use</h2>
             {renderTechnologies()}
         </div>
