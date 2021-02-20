@@ -5,7 +5,7 @@ import TechnologiesContainer from './TechnologiesContainer'
 
 export default function MainContent() {
     return (
-        <div>
+        <div id="main-content" className="glass">
             <ProjectsContainer />
             <TechnologiesContainer />
         </div>
