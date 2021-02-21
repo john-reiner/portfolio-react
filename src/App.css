@@ -7,6 +7,24 @@
     color: white;
 }
 
+#technology-navbar {
+    width: 100%;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.project {
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #333;
+    width: 25%;
+}
+
 
 .glass-container {
     background: inherit;
@@ -39,10 +57,11 @@
 }
 
 #landing-container {
-    height: 100vh;
+    height: 70vh;
     display: grid;
     align-items: center;
     justify-content: center;
+    /* margin-bottom: 30rem; */
 }
 
 #name-info {
@@ -65,3 +84,4 @@
     margin: auto;
     border-radius: 0;
 }
+

@@ -16,18 +16,15 @@ export default function ProjectShow(props) {
     }
 
     return (
-        <Row>
+        <Row className="glass">
             <Col>
-                <h3>{project.name}</h3>
-                {/* {project.image} */}
-                <Image src="http://via.placeholder.com/640x360" rounded />
-                {/* {project.url} */}
-                <a href="url">Demo</a>
-                {/* {project.github} */}
-
-                <a href="url">GitHub</a>
+                <h2>{project.name}</h2>
                 <p>{project.summary}</p>
-
+                <p><a href={project.url}>Demo</a></p>
+                <p><a href={project.github}>GitHub</a></p>
+            </Col>
+            <Col style={{display: "flex", justifyContent: "center"}}>
+                <Image src={project.image} fluid rounded />
             </Col>
         </Row>
     )

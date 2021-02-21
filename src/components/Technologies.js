@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react'
 
+import {Nav} from 'react-bootstrap'
+
 import Technology from './Technology'
 
-export default function TechnologiesContainer() {
+
+
+export default function Technologies() {
 
     const [technologies, setTechnologies] = useState([])
 
@@ -25,9 +29,9 @@ export default function TechnologiesContainer() {
     }
 
     return (
-        <div className="glass">
-            <h2>Technologies I Use</h2>
+        <Nav className="glass" id="technology-navbar">
+            
             {renderTechnologies()}
-        </div>
+        </Nav>
     )
 }

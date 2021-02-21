@@ -1,7 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import {Row, Container} from 'react-bootstrap'
 
 import Project from './Project.js'
 import ProjectShow from './ProjectShow.js'
+import Technologies from './Technologies'
+
+
 
 
 export default function ProjectsContainer() {
@@ -17,7 +21,7 @@ export default function ProjectsContainer() {
     const renderProjects = () => {
         if (projects.length > 0) {
             return projects.map(project => {
-                return <Project key={project.id} handleProjectClick={handleProjectClick} id={project.id} name={project.name} />
+                return <Project key={project.id} image={project.image} handleProjectClick={handleProjectClick} id={project.id} name={project.name} />
             })
         }
     }
@@ -31,10 +35,14 @@ export default function ProjectsContainer() {
     const handleProjectClick = id => setProjectId(id)
 
     return (
-        <div className="glass" >
+        <Container className="glass-container"  >
             <ProjectShow projectId={projectId} />
-            <h2>My Projects</h2>
-            {renderProjects()}
-        </div>
+            <Row className="glass" >
+                <Technologies />
+                <div id='projects-container'>
+                    {renderProjects()}
+                </div>
+            </Row>
+        </Container>
     )
 }

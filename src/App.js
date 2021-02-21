@@ -25,6 +25,7 @@ function App() {
       <Landing 
         first_name={user.first_name} 
         last_name={user.last_name}
+        bio={user.bio}
         email={user.email}
         links={user.links}
       />

@@ -10,7 +10,7 @@ export default function Landing(props) {
                 <div id='name-info'>
                     <h1 id="name">{props.first_name} {props.last_name}</h1>
                     <p>
-                        Full Stack Software Engineer
+                        {props.bio}
                     </p>
                 </div>
 
