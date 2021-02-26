@@ -20,7 +20,6 @@ export default function Technologies(props) {
 
     return (
         <Nav className="glass" id="technology-navbar">
-            <i className="fab fa-react"></i>
             {renderTechnologies()}
         </Nav>
     )

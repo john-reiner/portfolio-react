@@ -17,12 +17,10 @@ function App() {
     fetch('http://localhost:3001/users/1.json')
     .then(response => response.json())
     .then(user => {
-      console.log(user)
       setUser(user)
     })
     .catch(errors => console.log(errors))
   }
-  console.log(user.projects)
 
   return (
     <div id="app" >

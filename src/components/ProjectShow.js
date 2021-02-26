@@ -15,12 +15,14 @@ export default function ProjectShow(props) {
         .then(project => setProject(project))
     }
 
+    console.log(project)
+
     return (
-        <Row className="glass">
-            <Col>
+        <Row className="glass" style={{display:"flex", alignItems: "stretch"}}>
+            <Col style={{backgroundColor: "#333", borderRadius: "4px"}}>
                 <h2>{project.name}</h2>
                 <p>{project.summary}</p>
-                <p><a href={project.url}>Demo</a></p>
+                <p><a href={project.address}>Demo</a></p>
                 <p><a href={project.github}>GitHub</a></p>
             </Col>
             <Col style={{display: "flex", justifyContent: "center"}}>
