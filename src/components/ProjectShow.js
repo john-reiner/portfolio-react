@@ -18,8 +18,8 @@ export default function ProjectShow(props) {
     console.log(project)
 
     return (
-        <Row className="glass" style={{display:"flex", alignItems: "stretch"}}>
-            <Col style={{backgroundColor: "#333", borderRadius: "4px"}}>
+        <Row className="glass" id='project-show' style={{display:"flex", alignItems: "stretch"}}>
+            <Col id='project-show-left'>
                 <h2>{project.name}</h2>
                 <p>{project.summary}</p>
                 <p><a href={project.address}>Demo</a></p>

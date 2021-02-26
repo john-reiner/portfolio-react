@@ -11,16 +11,10 @@ export default function Landing(props) {
 
                     <h1 id="name">{props.first_name} {props.last_name}</h1>
                     <h4><a href={"mailto: " + props.email } >{props.email}</a></h4>
-                </Col>
-            </Row>
-            <Row className='glass'>
-                <Col style={{backgroundColor: "#333"}} id='links-bio-container'>
-                        
-                        
-                        <p>
-                            {props.bio}
-                        </p>
-                    <LandingLinks links={props.links} />
+                    <div id='links-bio-container'>
+                        <p>{props.bio}</p>
+                        <LandingLinks links={props.links} />
+                    </div>
                 </Col>
             </Row>
         </Container>

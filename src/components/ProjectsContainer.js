@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Row, Container} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'
 
 import Project from './Project.js'
 import ProjectShow from './ProjectShow.js'
@@ -25,12 +25,14 @@ export default function ProjectsContainer(props) {
 
     return (
         <Container className="glass-container"  >
-            <ProjectShow projectId={projectId} />
+            <Row className="glass-container" style={{marginBottom: "1rem"}}>
+                <ProjectShow projectId={projectId} />
+            </Row>
             <Row className="glass" >
-                <Technologies technologies={props.technologies} />
-                <div id='projects-container'>
+                <Col id='projects-container'>
+                    <Technologies technologies={props.technologies} />
                     {renderProjects()}
-                </div>
+                </Col>
             </Row>
         </Container>
     )
