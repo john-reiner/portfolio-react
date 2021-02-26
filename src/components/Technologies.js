@@ -19,7 +19,7 @@ export default function Technologies(props) {
     }
 
     return (
-        <Nav className="glass" id="technology-navbar">
+        <Nav id="technology-navbar">
             {renderTechnologies()}
         </Nav>
     )

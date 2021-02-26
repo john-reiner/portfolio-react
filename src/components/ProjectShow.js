@@ -15,10 +15,8 @@ export default function ProjectShow(props) {
         .then(project => setProject(project))
     }
 
-    console.log(project)
-
     return (
-        <Row className="glass" id='project-show' style={{display:"flex", alignItems: "stretch"}}>
+        <Row className="glass" id='project-show' style={{display:"flex", alignItems: "center"}}>
             <Col id='project-show-left'>
                 <h2>{project.name}</h2>
                 <p>{project.summary}</p>
