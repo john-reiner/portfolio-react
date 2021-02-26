@@ -8,29 +8,29 @@ import Technologies from './Technologies'
 
 
 
-export default function ProjectsContainer() {
+export default function ProjectsContainer(props) {
 
-    const [projects, setProjects] = useState([])
+    // const [projects, setProjects] = useState([])
     const [projectId, setProjectId] = useState(1)
     
 
-    useEffect(() => {
-        fetchProjects()
-    }, [])
+    // useEffect(() => {
+    //     fetchProjects()
+    // }, [])
 
     const renderProjects = () => {
-        if (projects.length > 0) {
-            return projects.map(project => {
+        if (props.projects) {
+            return props.projects.map(project => {
                 return <Project key={project.id} image={project.image} handleProjectClick={handleProjectClick} id={project.id} name={project.name} />
             })
         }
     }
 
-    const fetchProjects = () => {
-        fetch('http://localhost:3001/projects')
-        .then(response => response.json())
-        .then(projects => setProjects(projects))
-    }
+    // const fetchProjects = () => {
+    //     fetch('http://localhost:3001/projects.json')
+    //     .then(response => response.json())
+    //     .then(projects => setProjects(projects))
+    // }
 
     const handleProjectClick = id => setProjectId(id)
 
@@ -38,7 +38,7 @@ export default function ProjectsContainer() {
         <Container className="glass-container"  >
             <ProjectShow projectId={projectId} />
             <Row className="glass" >
-                <Technologies />
+                <Technologies technologies={props.technologies} />
                 <div id='projects-container'>
                     {renderProjects()}
                 </div>

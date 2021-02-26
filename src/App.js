@@ -14,10 +14,15 @@ function App() {
   }, [])
 
   const fetchUser = () => {
-    fetch('http://localhost:3001/users/1')
+    fetch('http://localhost:3001/users/1.json')
     .then(response => response.json())
-    .then(user => setUser(user))
+    .then(user => {
+      console.log(user)
+      setUser(user)
+    })
+    .catch(errors => console.log(errors))
   }
+  console.log(user.projects)
 
   return (
     <div id="app" >
@@ -30,7 +35,7 @@ function App() {
         links={user.links}
       />
 
-      <MainContent />
+      <MainContent projects={user.projects} technologies={user.technologies} />
     
 
     </div>

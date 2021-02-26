@@ -2,27 +2,17 @@ import React, {useState, useEffect} from 'react'
 
 import {Nav} from 'react-bootstrap'
 
+// import DevIcon from "devicon-react-svg";
+
 import Technology from './Technology'
 
 
 
-export default function Technologies() {
-
-    const [technologies, setTechnologies] = useState([])
-
-    useEffect(() => {
-        fetchTechnologies()
-    }, [])
-
-    const fetchTechnologies = () => {
-        fetch('http://localhost:3001/technologies')
-        .then(response => response.json())
-        .then(technologies => setTechnologies(technologies))
-    }
+export default function Technologies(props) {
 
     const renderTechnologies = () => {
-        if (technologies.length > 0) {
-            return technologies.map(technology => {
+        if (props.technologies) {
+            return props.technologies.map(technology => {
                 return <Technology key={technology.id} name={technology.name} image={technology.image}/>
             })
         }
@@ -30,7 +20,7 @@ export default function Technologies() {
 
     return (
         <Nav className="glass" id="technology-navbar">
-            
+            <i className="fab fa-react"></i>
             {renderTechnologies()}
         </Nav>
     )

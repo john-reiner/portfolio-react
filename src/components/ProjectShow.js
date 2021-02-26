@@ -10,7 +10,7 @@ export default function ProjectShow(props) {
     }, [props.projectId])
 
     const fetchProject = () => {
-        fetch(`http://localhost:3001/projects/${props.projectId}`)
+        fetch(`http://localhost:3001/projects/${props.projectId}.json`)
         .then(response => response.json())
         .then(project => setProject(project))
     }
