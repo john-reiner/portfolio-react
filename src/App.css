@@ -104,10 +104,11 @@
 #project-show {
     display: flex;
     align-items: center;
+    background-color: #333;
 }
 
 #project-show-left {
-    background-color: #333;
+    /* background-color: #333; */
     border-radius: 4px;
     padding: 3rem;
 }
