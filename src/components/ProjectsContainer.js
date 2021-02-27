@@ -16,7 +16,7 @@ export default function ProjectsContainer(props) {
     const renderProjects = () => {
         if (props.projects) {
             return props.projects.map(project => {
-                return <Project key={project.id} address={project.address} image={project.image} handleProjectClick={handleProjectClick} id={project.id} name={project.name} />
+                return <Project key={project.id} address={project.address} image={project.image} handleProjectClick={handleProjectClick} id={project.id} name={project.name} technologies={project.technologies} />
             })
         }
     }

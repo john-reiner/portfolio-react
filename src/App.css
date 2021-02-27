@@ -1,3 +1,6 @@
+body {
+    
+}
 #app {
     background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
     background-size: cover;
@@ -6,6 +9,7 @@
     background-color: #333;
     color: white;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
 }
 
 .tech {
@@ -72,7 +76,7 @@
 
 #landing-container {
     height: 70vh;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20vh;
@@ -80,13 +84,13 @@
 
 #name-info {
     text-align: center;
-    font-size: large;
-    font-size: 2rem;
+    /* font-size: large; */
+    /* font-size: 2rem; */
 }
 
-#name {
-    font-size: 5rem;
-}
+/* #name {
+    font-size: 5em;
+} */
 
 #links-container {
     display: flex;
@@ -105,10 +109,15 @@
     display: flex;
     align-items: center;
     background-color: #333;
+    padding: 1rem;
+    border-radius: 4px;
 }
 
-#project-show-left {
-    /* background-color: #333; */
-    border-radius: 4px;
-    padding: 3rem;
+/* #project-show-left {
+    background-color: #333;
+} */
+
+#project-show-right {
+    display: flex;
+    justify-content: center;
 }
