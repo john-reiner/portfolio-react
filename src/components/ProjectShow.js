@@ -20,7 +20,7 @@ export default function ProjectShow(props) {
     const renderTechnologies = () => {
         if (project.technologies) {
             return project.technologies.map(technology => {
-                return <Technology key={technology.id} name={technology.name} image={technology.image}/>
+                return <Technology key={technology.id} image={technology.image}/>
             })
         }
     }
