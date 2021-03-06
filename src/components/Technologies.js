@@ -13,7 +13,7 @@ export default function Technologies(props) {
     const renderTechnologies = () => {
         if (props.technologies) {
             return props.technologies.map(technology => {
-                return <Technology key={technology.id} name={technology.name} image={technology.image}/>
+                return <Technology handleTechnologyClick={props.handleTechnologyClick} key={technology.id} name={technology.name} image={technology.image} id={technology.id}/>
             })
         }
     }
