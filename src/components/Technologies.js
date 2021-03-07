@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-import {Nav} from 'react-bootstrap'
+import {Nav, Button} from 'react-bootstrap'
 
 // import DevIcon from "devicon-react-svg";
 
@@ -19,8 +19,12 @@ export default function Technologies(props) {
     }
 
     return (
-        <Nav id="technology-navbar">
-            {renderTechnologies()}
-        </Nav>
+        <div>
+            <Nav id="technology-navbar">
+                <Button variant="link" onClick={props.handleAllClick} id="all-button">All</Button>
+                {renderTechnologies()}
+            </Nav>
+
+        </div>
     )
 }

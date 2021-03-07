@@ -9,4 +9,3 @@ export default function Technology(props) {
         </div>
     )
 }
-{/* <p style={{margin: "auto 0.5rem"}} ></p> */}

@@ -20,34 +20,31 @@ export default function ProjectShow(props) {
     const renderTechnologies = () => {
         if (project.technologies) {
             return project.technologies.map(technology => {
-                return <Technology key={technology.id} image={technology.image}/>
+                return <Technology handleTechnologyClick={props.handleTechnologyClick} name={technology.name} key={technology.id} image={technology.image} id={technology.id}/>
             })
         }
     }
 
     return (
         <Container className="glass" >
-
-        <Row id='project-show' >
-                <Col id='project-show-left'>
-                            <h2>{project.name}</h2>
-                            <p>{project.summary}</p>                
-                    <Row>
-                        <Col>
-                            <p><a href={project.address}>Demo</a></p>
-                            <p><a href={project.github}>GitHub</a></p>
-                        </Col>
-                        <Col id="project-show-technologies">
-                            {renderTechnologies()}
-                        </Col>
-                    </Row>
-
-
-                </Col>
-                <Col id="project-show-right">
-                    <Image src={project.image} fluid rounded />
-                </Col>
-        </Row>
+            <Row id='project-show' >
+                    <Col id='project-show-left'>
+                                <h2>{project.name}</h2>
+                                <p>{project.summary}</p>                
+                        <Row>
+                            <Col>
+                                <p><a href={project.address}>Demo</a></p>
+                                <p><a href={project.github}>GitHub</a></p>
+                            </Col>
+                            <Col id="project-show-technologies">
+                                {renderTechnologies()}
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col id="project-show-right">
+                        <Image src={project.image} fluid rounded />
+                    </Col>
+            </Row>
         </Container>
     )
 }

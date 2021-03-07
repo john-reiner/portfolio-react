@@ -33,7 +33,7 @@ function App() {
         links={user.links}
       />
 
-      <MainContent projects={user.projects} technologies={user.technologies} />
+      <MainContent blogs={user.blogs} projects={user.projects} technologies={user.technologies} />
     
 
     </div>

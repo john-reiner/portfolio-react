@@ -22,9 +22,7 @@ export default function ProjectsContainer(props) {
     const fetchProjects = id => {
         fetch(`http://localhost:3001/projects/sort/${id}.json`)
         .then(response => response.json())
-        .then(projects => {
-            setProjects(projects.projects)
-        })
+        .then(projects => setProjects(projects))
         .catch(errors => console.log(errors))
     }
 
@@ -38,15 +36,16 @@ export default function ProjectsContainer(props) {
 
     const handleProjectClick = id => setProjectId(id)
     const handleTechnologyClick = id => setTechnologyId(id)
+    const handleAllClick = () => setProjects(props.projects)
 
     return (
         <Container className="glass-container"  >
             <Row className="glass-container" style={{marginBottom: "1rem"}}>
-                <ProjectShow projectId={projectId} />
+                <ProjectShow handleTechnologyClick={handleTechnologyClick} projectId={projectId} />
             </Row>
             <Row className="glass" >
                 <Col id='projects-container'>
-                    <Technologies handleTechnologyClick={handleTechnologyClick} technologies={props.technologies} />
+                    <Technologies handleAllClick={handleAllClick} handleTechnologyClick={handleTechnologyClick} technologies={props.technologies} />
                     {renderProjects()}
                 </Col>
             </Row>

@@ -8,7 +8,7 @@ export default function Project(props) {
     const renderTechnologies = () => {
         if (props.technologies) {
             return props.technologies.map(technology => {
-                return <Technology handleTechnologyClick={props.handleTechnologyClick} key={technology.id} name={technology.name} id={technology.id}/>
+                return <Technology handleTechnologyClick={props.handleTechnologyClick} key={technology.id} image={technology.image} name={technology.name} id={technology.id}/>
             })
         }
     }
