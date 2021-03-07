@@ -7,7 +7,7 @@ export default function MainContent(props) {
     return (
         <div className="glass-container">
             <ProjectsContainer projects={props.projects} technologies={props.technologies}/>
-            <BlogsContainer blogs={props.blogs}/>
+            <BlogsContainer blogs={props.blogs} technologies={props.technologies}/>
         </div>
     )
 }
