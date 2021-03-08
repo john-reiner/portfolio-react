@@ -1,8 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 import {Nav, Button} from 'react-bootstrap'
-
-// import DevIcon from "devicon-react-svg";
 
 import Technology from './Technology'
 
