@@ -1,3 +1,18 @@
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.menu-item {
+    border:  solid white 1px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: #333;
+    cursor: pointer;
+}
+
 .blog {
     background-color: #333;
     display: flex;
@@ -29,7 +44,6 @@
     background-color: #333;
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
 }
 
 .project-show-technologies {
@@ -99,11 +113,10 @@
 }
 
 #landing-container {
-    height: 70vh;
+
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    margin-bottom: 20vh;
 }
 
 #name-info {

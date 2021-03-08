@@ -14,7 +14,7 @@ export default function Blog(props) {
     const renderTechnologies = () => {
         if (props.technologies) {
             return props.technologies.map(technology => {
-                return <Technology handleTechnologyClick={props.handleTechnologyClick} name={technology.name} image={technology.image}/>
+                return <Technology handleTechnologyClick={props.handleTechnologyClick} name={technology.name} image={technology.image} id={technology.id}/>
             })
         }
     }
