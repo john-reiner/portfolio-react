@@ -39,10 +39,10 @@ export default function ProjectsContainer(props) {
     const handleAllClick = () => setProjects(props.projects)
 
     return (
-        <Container className="glass-container"  >
-            <Row className="glass-container" style={{marginBottom: "1rem"}}>
-                <ProjectShow handleTechnologyClick={handleTechnologyClick} projectId={projectId} />
-            </Row>
+        <Container className="glass-container">
+            
+            <ProjectShow handleTechnologyClick={handleTechnologyClick} projectId={projectId} />
+            
             <Row className="glass" >
                 <Col id='projects-container'>
                     <Technologies handleAllClick={handleAllClick} handleTechnologyClick={handleTechnologyClick} technologies={props.technologies} />

@@ -4,7 +4,7 @@ import {Navbar, Nav} from 'react-bootstrap'
 export default function Menu(props) {
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  >
+        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark"  >
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center" variant="tabs" fill>
                 <Nav>

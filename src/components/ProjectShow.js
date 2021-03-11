@@ -26,25 +26,23 @@ export default function ProjectShow(props) {
     }
 
     return (
-        <Container className="glass" >
-            <Row id='project-show' >
-                <Col id='project-show-left'>
-                            <h2>{project.name}</h2>
-                            <p>{project.summary}</p>                
-                    <Row>
-                        <Col>
-                            <p><a href={project.address}>Demo</a></p>
-                            <p><a href={project.github}>GitHub</a></p>
-                        </Col>
-                        <Col id="project-show-technologies">
-                            {renderTechnologies()}
-                        </Col>
-                    </Row>
-                </Col>
-                <Col id="project-show-right">
-                    <Image src={project.image} fluid rounded />
-                </Col>
-            </Row>
-        </Container>
+        <Row className="glass" style={{marginBottom: "1rem"}}>
+            <Col id="project-show-right">
+                <img src={project.image} id="show-picture" />
+            </Col>
+            <Col>
+                        <h2>{project.name}</h2>
+                        <p>{project.summary}</p>                
+                <Row>
+                    <Col>
+                        <p><a href={project.address}>Demo</a></p>
+                        <p><a href={project.github}>GitHub</a></p>
+                    </Col>
+                    <Col id="project-show-technologies">
+                        {renderTechnologies()}
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
     )
 }
