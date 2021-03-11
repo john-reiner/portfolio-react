@@ -1,11 +1,14 @@
-.menu {
+.menu-container {
+    
+}
+#menu {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
 
-.menu-item {
+#menu-item {
     border:  solid white 1px;
     padding: 1rem 2rem;
     border-radius: 4px;
@@ -117,6 +120,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    padding-bottom: 25vh;
 }
 
 #name-info {

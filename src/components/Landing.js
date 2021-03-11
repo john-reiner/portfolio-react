@@ -5,7 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 export default function Landing(props) {
     return (
-        <Container id='landing-container' className='glass-container' fluid>
+        <Container id='landing-container' className='glass-container'>
             <Row className='glass'>
                 <Col id='name-info'>
 
