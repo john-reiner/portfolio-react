@@ -11,14 +11,13 @@
 #main-content {
     /* height: 100vh; */
     padding-top: 10vh;
+    padding-bottom:30vh;
 }
 
-/* #landing-container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding-bottom: 25vh;
-} */
+#landing-container {
+    margin-bottom: 100px;
+    padding: 3rem;
+}
 
 #name-info {
     text-align: center;
@@ -34,7 +33,7 @@
     padding: 3rem;
     border-radius: 4px;
     background-color: #333;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     text-align: center;
 }
 

@@ -27,10 +27,10 @@ export default function ProjectShow(props) {
 
     return (
         <Row className="glass" style={{marginBottom: "1rem"}}>
-            <Col id="project-show-right">
+            <Col id="project-show-right" sm={6}>
                 <img src={project.image} id="show-picture" />
             </Col>
-            <Col>
+            <Col sm={6}>
                         <h2>{project.name}</h2>
                         <p>{project.summary}</p>                
                 <Row>
