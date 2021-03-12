@@ -17,12 +17,9 @@ export default function Technologies(props) {
     }
 
     return (
-        <div>
-            <Nav id="technology-navbar">
-                <Button variant="link" onClick={props.handleAllClick} id="all-button">All</Button>
-                {renderTechnologies()}
-            </Nav>
-
-        </div>
+        <Nav id="technology-navbar">
+            <Button variant="link" onClick={props.handleAllClick} id="all-button">All</Button>
+            {renderTechnologies()}
+        </Nav>
     )
 }

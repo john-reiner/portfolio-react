@@ -43,6 +43,12 @@
     align-items: center;
 }
 
+#project-show-left {
+    background-color: #333 ;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
 #show-picture{
     width: 100%;
 }
@@ -55,16 +61,15 @@
     margin: 1rem;
     padding: 1rem;
     border-radius: 4px;
-    width: 85%
-}
-.blog-right {
-    display: flex;
-    justify-content: space-between;
-
+    /* width: 85% */
 }
 
 .blog-image{
-    width: 200px;
+    width: 100%;
+}
+
+#blog-button{
+    padding-left: 0;
 }
 #all-button{
     margin-left: 50%;
@@ -96,6 +101,14 @@
     
 }
 
+.resume-container {
+    background-color: #333;
+    padding: 1rem;
+}
+
+#resume-image {
+    width: 200px;
+}
 
 .glass-container {
     background: inherit;

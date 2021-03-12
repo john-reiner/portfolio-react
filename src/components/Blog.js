@@ -1,5 +1,5 @@
 import React from 'react'
-import {Image, Button} from 'react-bootstrap'
+import {Image, Button, Row, Col} from 'react-bootstrap'
 
 import Technology from './Technology'
 
@@ -25,17 +25,19 @@ export default function Blog(props) {
     }
 
     return (
-        <div className="blog">
-            <div>
-                <Button variant="link" onClick={() => openInNewTab(props.address)} ><h4>{props.title}</h4></Button>
+        <Row className="blog">
+            <Col xs={6}>
+                <Button variant="link" id="blog-button" onClick={() => openInNewTab(props.address)} ><h4>{props.title}</h4></Button>
                 <p>{props.summary}</p>
                 <p><small>Published: {getFormattedDate(props.date)}</small></p>
-            </div>
-            <div className="blog-right">
+            </Col>
+            <Col>
                 <div>{renderTechnologies()}</div>
-                
+            </Col>
+
+            <Col>
                 <Image src={props.image} className="blog-image" fluid rounded />
-            </div>
-        </div>
+            </Col>
+        </Row>
     )
 }

@@ -38,10 +38,9 @@ export default function BlogsContainer(props) {
     const handleAllClick = () => setBlogs(props.blogs)
 
     return (
-        <Container className="glass-container" style={{marginTop: '3rem'}}>
+        <Container className="glass-container">
             <Row className="glass">
                 <Col>
-                    <h2 style={{display: "flex", justifyContent: "center"}}>Blogs</h2>
                     <Technologies handleAllClick={handleAllClick} handleTechnologyClick={handleTechnologyClick} technologies={props.technologies} />
                     {renderBlogs()}
                 </Col>
