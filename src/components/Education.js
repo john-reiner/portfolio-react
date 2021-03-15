@@ -1,24 +1,28 @@
 import React from 'react'
-import Technology from './Technology'
+import {Row, Col, Container} from 'react-bootstrap'
 
 export default function Education(props) {
 
     const renderTechnologies = () => {
         if (props.technologies.length > 0) {
-            console.log(props.technologies)
-            // props.technologies.each(technology => {
-            //     console.log(technology)
-            // })
+            return props.technologies.map(technology => {
+                return `${technology.name}${technology.id !== props.technologies.length ? "," : ""} `
+            })
         }
-
     }
 
     return (
-        <tr>
-            <td>{props.title}</td>
-            <td>{props.end_date}</td>
-            <td>{props.description}</td>
-            <td>{renderTechnologies()}</td>
-        </tr>
+        <Container>
+            <Row className="education-heading">
+                <h4>{props.title}</h4>
+                <p>Graduated: {props.end_date}</p>
+            </Row>
+            <Row>
+            <Col>{props.description}</Col>
+            <Col id="skills-technologies">
+                {renderTechnologies()}
+            </Col>
+            </Row>
+        </Container>
     )
 }

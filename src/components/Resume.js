@@ -46,30 +46,44 @@ export default function EducationsContainer(props) {
     }
 
     return (
-        <Container className="resume-container" style={{marginTop: '3rem'}}>
+        <Container style={{marginTop: '3rem'}} className="glass">
             <Row>
                 <Col xs={6} md={4} >
-                    <Image src={props.user.image} id="resume-image" rounded fluid/>
-                    <h2>{props.user.first_name} {props.user.last_name}</h2>
-                    <h4>{props.user.title}</h4>
-                    <hr/>
+                    <div className="resume-item">
+                        <Image src={props.user.image} id="resume-image" rounded fluid/>
+                        <h2>{props.user.first_name} {props.user.last_name}</h2>
+                        <h4>{props.user.title}</h4>
+                    </div>
+                    <br/>
+                    <div className="resume-item">
                     <p>{props.user.tech_bio}</p>
                     <p>{props.user.bio}</p>
-                    <hr/>
-                    <h5>Location</h5>
-                    <p>{props.user.location}</p>
-                    <h5>Email</h5>
-                    <p><a href={"mailto: " + props.user.email } >{props.user.email}</a></p>
-                    {renderLinks()}
+                    </div>
+                    <br/>
+                    <div className="resume-item">
+                        <h5>Location</h5>
+                        <p>{props.user.location}</p>
+                        <h5>Email</h5>
+                        <p><a href={"mailto: " + props.user.email } >{props.user.email}</a></p>
+                        {renderLinks()}
+                    </div>
                     <hr/>
                 </Col>
                 <Col>
-                    <h2>Education</h2>
-                    {renderEducations()}
-                    <h2>Experience</h2>
-                    {renderExperiences()}
-                    <h2>Technologies</h2>
-                    {renderTechnologies()}
+                    <div className="resume-item">
+                        <h2>Education</h2>
+                        {renderEducations()}
+                    </div>
+                    <br/>
+                    <div className="resume-item">
+                        <h2>Experience</h2>
+                        {renderExperiences()}
+                    </div>
+                    <br/>
+                    <div className="resume-item">
+                        <h2>Technologies</h2>
+                        {renderTechnologies()}
+                    </div>
                 </Col>
             </Row>
         </Container>

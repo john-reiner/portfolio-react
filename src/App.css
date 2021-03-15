@@ -26,7 +26,6 @@
 #links-container {
     display: flex;
     justify-content: space-around;
-    
 }
 
 #links-bio-container {
@@ -101,13 +100,19 @@
     
 }
 
-.resume-container {
+.resume-item {
     background-color: #333;
     padding: 1rem;
+    border-radius: 4px;
 }
 
 #resume-image {
     width: 200px;
+}
+
+#skills-technologies {
+    list-style-type: none;
+    display: flex;
 }
 
 .glass-container {
@@ -138,4 +143,11 @@
     filter: blur(10px);
     margin: -20px;
     z-index: -1;
+}
+
+.education-heading {
+    justify-content: space-between;
+    border-top: solid white 3px;
+    padding-top: 1rem;
+    border-bottom: solid white 1px;
 }
