@@ -147,7 +147,7 @@
 
 .education-heading {
     justify-content: space-between;
-    border-top: solid white 3px;
+    /* border-top: solid white 3px; */
     padding-top: 1rem;
     border-bottom: solid white 1px;
 }

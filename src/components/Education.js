@@ -17,12 +17,14 @@ export default function Education(props) {
                 <h4>{props.title}</h4>
                 <p>Graduated: {props.end_date}</p>
             </Row>
+            <br></br>
             <Row>
             <Col>{props.description}</Col>
             <Col id="skills-technologies">
                 {renderTechnologies()}
             </Col>
             </Row>
+            <br></br>
         </Container>
     )
 }

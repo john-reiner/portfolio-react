@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import {Row, Col, Container, Image} from 'react-bootstrap'
 
 import Education from './Education'
 import Link from './Link'
 import Experience from './Experience'
 import Technology from './Technology'
+import Skill from './Skill'
 
 export default function EducationsContainer(props) {
 
@@ -45,6 +46,14 @@ export default function EducationsContainer(props) {
         }
     }
 
+    const renderSkills = () => {
+        if (props.technologies) {
+            return props.technologies.map(skill => {
+                return <Skill {...skill}/>
+            })
+        }
+    }
+
     return (
         <Container style={{marginTop: '3rem'}} className="glass">
             <Row>
@@ -72,6 +81,7 @@ export default function EducationsContainer(props) {
                 <Col>
                     <div className="resume-item">
                         <h2>Education</h2>
+                        <hr></hr>
                         {renderEducations()}
                     </div>
                     <br/>
@@ -83,6 +93,10 @@ export default function EducationsContainer(props) {
                     <div className="resume-item">
                         <h2>Technologies</h2>
                         {renderTechnologies()}
+                    </div>
+                    <div className="resume-item">
+                        <h2>Skills</h2>
+                        {renderSkills()}
                     </div>
                 </Col>
             </Row>
