@@ -47,8 +47,8 @@ export default function EducationsContainer(props) {
     }
 
     const renderSkills = () => {
-        if (props.technologies) {
-            return props.technologies.map(skill => {
+        if (props.skills) {
+            return props.skills.map(skill => {
                 return <Skill {...skill}/>
             })
         }
