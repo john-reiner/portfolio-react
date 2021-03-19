@@ -54,6 +54,8 @@ export default function EducationsContainer(props) {
         }
     }
 
+    console.log(props)
+
     return (
         <Container style={{marginTop: '3rem'}} className="glass">
             <Row>
@@ -76,28 +78,32 @@ export default function EducationsContainer(props) {
                         <p><a href={"mailto: " + props.user.email } >{props.user.email}</a></p>
                         {renderLinks()}
                     </div>
-                    <hr/>
                 </Col>
                 <Col>
-                    <div className="resume-item">
+
+                    <Row className="resume-item">
                         <h2>Education</h2>
                         <hr></hr>
                         {renderEducations()}
-                    </div>
+                    </Row>
                     <br/>
-                    <div className="resume-item">
+                    <Row className="resume-item">
                         <h2>Experience</h2>
                         {renderExperiences()}
-                    </div>
+                    </Row>
                     <br/>
-                    <div className="resume-item">
-                        <h2>Technologies</h2>
-                        {renderTechnologies()}
-                    </div>
-                    <div className="resume-item">
-                        <h2>Skills</h2>
-                        {renderSkills()}
-                    </div>
+                    <Row className="resume-item">
+                        
+                        <Col >
+                            <h2>Technologies</h2>
+                            {renderTechnologies()}
+                        </Col>
+                        <Col>
+                            <h2>Skills</h2>
+                            {renderSkills()}
+                        </Col>
+
+                    </Row>
                 </Col>
             </Row>
         </Container>

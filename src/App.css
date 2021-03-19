@@ -104,13 +104,14 @@
     background-color: #333;
     padding: 1rem;
     border-radius: 4px;
+    margin: 1rem;
 }
 
 #resume-image {
     width: 200px;
 }
 
-#skills-technologies {
+.skills-technologies {
     list-style-type: none;
     display: flex;
 }
