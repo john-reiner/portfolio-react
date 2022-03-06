@@ -1,3 +1,35 @@
-#about {
+body {
+    /* background: linear-gradient(180deg, #000, #111);\ */
+    /* color: whitesmoke; */
+    background-color: cornflowerblue;
+}
+
+#top-container {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container {
+    /* background-color: whitesmoke; */
+    color: black;
+    padding: 1em;
+    width: 560px;
+    border-radius:30px;
+}
+
+#main-icon {
+    font-size: 8em;
+}
+
+#contact-icon-row {
+    width: 100%;
+    /* border: red 1px solid; */
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2em;
 }
