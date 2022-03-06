@@ -1,0 +1,24 @@
+{
+    "languages" : [
+        "ruby",
+        "javascript",
+        "nodejs",
+        "python",
+        "postgresql"
+    ],
+    "frameworks" : [
+        "react",
+        "rails",
+        "pygame",
+        "fastapi",
+        "postgresql"
+    ],
+    "technologies" : [
+        "vscode",
+        "javascript",
+        "node-js",
+        "python",
+        "postgresql"
+    ]
+    
+}

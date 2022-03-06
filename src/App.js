@@ -19,49 +19,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Container >
-        <Row>
-          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-        </Row>
-
-        <Row>
-        
-            <About />
-          
-        </Row>
-
-        <Row>
-        
-            <Skills/>
-          
-        </Row>
-
-        <Row>
-        
-            <Resume />
-          
-        </Row>
-
-        <Row>
-        
-            <Projects />
-          
-        </Row>
-
-        <Row>
-        
-            <Contact />
-          
-        </Row>
-
-        <Row>
-        
-            <Footer />
-          
-        </Row>
-
-      </Container>
-
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <About />
+      <Projects />
+      <Skills/>
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 }
