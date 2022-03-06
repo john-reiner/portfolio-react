@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 
 import {Container, Row } from 'react-bootstrap' 
 
@@ -12,14 +13,15 @@ import Skills from './components/Skills'
 import NavBar from './components/NavBar';
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="App">
       <NavBar />
       <Container >
         <Row>
-        
-            <Header />
-          
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         </Row>
 
         <Row>
