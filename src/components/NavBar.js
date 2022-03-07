@@ -12,8 +12,10 @@ export default function NavBar(props) {
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
+                    id="arrow"
+                    color="rgb(162 3 22 / 100%)"
                 />{' '}
-                Portfolio
+                {props.pageName}
                 </Navbar.Brand>
 
             </Container>

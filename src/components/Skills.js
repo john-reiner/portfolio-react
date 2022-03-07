@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Row, Container} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
-import skills from '../skills.json'
+import skills from '../payload.json'
 import Skill from './Skill'
 
 export default function Skills() {

@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import Typical from 'react-typical'
 
 
-export default function Header(props) {
+export default function Home(props) {
   return (
     <Col id='header-container'>
       <Row>

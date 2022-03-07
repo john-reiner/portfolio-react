@@ -13,11 +13,11 @@ export default function RightBar(props) {
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(0)}>
-                    <Icon icon="bi:grid-3x2-gap-fill" />
+                <Icon icon="ant-design:home-outlined" />
                     <p>Home</p>
                 </Row>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(1)}>
-                    <Icon icon="bi:grid-3x2-gap-fill" />
+                <Icon icon="cib:about-me" />
                     <p>About</p>
                 </Row>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(2)}>
@@ -25,11 +25,11 @@ export default function RightBar(props) {
                     <p>Projects</p>
                 </Row>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(3)}>
-                    <Icon icon="bi:grid-3x2-gap-fill" />
+                    <Icon icon="bi:hand-thumbs-up" />
                     <p>Skills</p>
                 </Row>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(4)}>
-                    <Icon icon="bi:grid-3x2-gap-fill" />
+                    <Icon icon="fluent:contact-card-16-regular" />
                     <p>Contact</p>
                 </Row>
             </Offcanvas.Body>

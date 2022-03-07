@@ -7,6 +7,8 @@ body {
 #rightbar {
     background-color: rgb(51 14 16 / 100%);
     color: whitesmoke;
+    width: 75%;
+    max-width: 300px;
 }
 
 .rightbar-link {
@@ -31,6 +33,9 @@ body {
     margin: 0;
 }
 
+#arrow:hover {
+    cursor: pointer;
+}
 
 
 #header-container {
@@ -50,7 +55,8 @@ body {
     color: rgb(0 252 56 / 100%);
 }
 #about-container {
-    background-color: whitesmoke;
+    background-color: #333;
+    color: whitesmoke;
     padding-bottom: 3em;
 }
 
@@ -68,6 +74,8 @@ body {
 #photo-container {
     display: flex;
     justify-content: center;
+    color: black;
+    margin-bottom: 2em;
 }
 
 #picture {
@@ -81,6 +89,7 @@ body {
 
 #photo {
     /* border: solid red 1px; */
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -98,7 +107,66 @@ body {
 }
 
 #about-text-container {
-    box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+    border: rgb(75, 75, 75) solid 1px;
+    border-radius: 12px;
+    background-color: rgb(33, 32, 30);
+    box-shadow: 0 24px 15px rgb(0 0 0 / 30%)
+
+}
+
+#about-bar {
+    background-color: rgb(52, 51, 50);
+    height: 30px;
+    border-top-left-radius: 12px 12px;
+    border-top-right-radius: 12px 12px;
+    border-bottom: solid rgb(12, 12, 11) 1px;
+    display: flex;
+}
+#about-bar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52px;
+    margin-left: 7px ;
+}
+
+
+#red-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(238, 105, 94);
+    font-size: 15px;
+}
+
+#red-button:hover {
+    cursor: pointer;
+}
+
+#yellow-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(245, 189, 79);
+}
+
+#green-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(97, 196, 84);
+}
+
+#about-bar-title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(169, 168, 166);
+}
+
+#about-content {
     padding: 1em;
 }
 
@@ -108,8 +176,20 @@ body {
     font-size: 1.5em;
 }
 
-.projects-row {
-    margin-bottom: 3em;
+#projects-container {
+    /* height: 80vh; */
+    /* margin-top: 5em; */
+    /* overflow: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 1px; */
+}
+
+#projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-container {
@@ -127,6 +207,16 @@ body {
 
 .project-photo:active {
     box-shadow: none;
+}
+
+#project-images-container {
+    max-width: 300px;
+}
+
+#project-images-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
 #skills-container {

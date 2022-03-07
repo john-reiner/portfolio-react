@@ -1,0 +1,23 @@
+{
+    "skills" : {
+        "languages" : [],
+        "frameworks" : [],
+        "technologies" : []
+    },
+    "projects" : [
+        {
+            "id" : 1,
+            "name" : "My Portfolio",
+            "description" : "This is the portfolio you are currently viewing! Please checkout my github link (README.md) for more information on the source code.",
+            "github" : "https://github.com/john-reiner/portfolio-react",
+            "url" : "/",
+            "main_image_url" : "https://via.placeholder.com/300x300",
+            "images" : [
+                {"description" : "A description about this image", "url" : "https://via.placeholder.com/300x300"},
+                {"description" : "A description about this image", "url" : "https://via.placeholder.com/300x300"},
+                {"description" : "A description about this image", "url" : "https://via.placeholder.com/300x300"},
+                {"description" : "A description about this image", "url" : "https://via.placeholder.com/300x300"}
+            ]
+        }
+    ]
+}
