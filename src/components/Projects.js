@@ -12,24 +12,24 @@ export default function Projects() {
         </Row>
         <Row className="projects-row">
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo" />
           </Col>
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo"/>
           </Col>
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo"/>
           </Col>
         </Row>
         <Row className="projects-row">
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo"/>
           </Col>
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo"/>
           </Col>
           <Col className="project-container">
-            <Image rounded src="https://via.placeholder.com/300x300" />
+            <Image rounded src="https://via.placeholder.com/300x300" className="project-photo"/>
           </Col>
         </Row>
       </Container>

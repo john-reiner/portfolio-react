@@ -1,11 +1,41 @@
 body {
     /* background: linear-gradient(180deg, #000, #111);\ */
     /* color: whitesmoke; */
-    background-color: cornflowerblue;
+    background-color: #333;
 }
 
-#top-container {
-    height: 100vh;
+#rightbar {
+    background-color: rgb(51 14 16 / 100%);
+    color: whitesmoke;
+}
+
+.rightbar-link {
+    /* border: yellow solid; */
+    display: flex;
+    align-items: center;
+    font-size: large;
+    padding: .5em;
+}
+.rightbar-link:hover {
+    /* border: yellow solid; */
+    cursor: pointer;
+    background-color: rgb(41 14 16 / 100%);
+}
+
+.rightbar-link svg {
+    margin-right: 1em;
+    width: fit-content;
+}
+.rightbar-link p {
+    width: fit-content;
+    margin: 0;
+}
+
+
+
+#header-container {
+    height: 90vh;
+    color: rgb(162 3 22 / 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,16 +46,9 @@ body {
     font-size: 8em;
 }
 
-#contact-icon-row {
-    width: 100%;
-    /* border: red 1px solid; */
-    text-align: center;
+#typical {
+    color: rgb(0 252 56 / 100%);
 }
-
-.contact-icon {
-    font-size: 2em;
-}
-
 #about-container {
     background-color: whitesmoke;
     padding-bottom: 3em;
@@ -85,16 +108,25 @@ body {
     font-size: 1.5em;
 }
 
-#projects-container {
-    
-}
 .projects-row {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .project-container {
     display: flex;
     justify-content: center;
+}
+
+.project-photo {
+    box-shadow: 0 4px 6px rgb(0 0 0 / 50%);
+}
+
+.project-photo:hover {
+    cursor: pointer;
+}
+
+.project-photo:active {
+    box-shadow: none;
 }
 
 #skills-container {
@@ -123,4 +155,17 @@ body {
 
 .skill svg{
     width: fit-content;
+}
+
+.skill p{
+    width: fit-content;
+    margin: 0%;
+}
+
+#resume-container {
+    background-color: whitesmoke;
+}
+
+#contact-container {
+    height: 100vh;
 }

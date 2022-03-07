@@ -8,17 +8,14 @@
     ],
     "frameworks" : [
         "react",
-        "rails",
-        "pygame",
-        "fastapi",
-        "postgresql"
+        "rails"
     ],
     "technologies" : [
         "vscode",
-        "javascript",
-        "node-js",
-        "python",
-        "postgresql"
+        "linux",
+        "docker",
+        "kubernetes",
+        "heroku"
     ]
     
 }

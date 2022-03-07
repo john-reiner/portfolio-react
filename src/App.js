@@ -1,7 +1,7 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import {Container, Row } from 'react-bootstrap' 
+import {Container, Row, Offcanvas } from 'react-bootstrap' 
 
 import About from './components/About'
 import Contact from './components/Contact'
@@ -11,21 +11,41 @@ import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Skills from './components/Skills'
 import NavBar from './components/NavBar';
+import RightBar from './components/RightBar';
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [componentIndex, setComponentIndex] = useState(0);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    if (show) {
+      setShow(false)
+    }
+  }, [componentIndex]);
+
+  const renderComponent = (index) => {
+
+    const components = [
+        <Header />,
+        <About />,
+        <Projects />,
+        <Skills/>,
+        <Contact />
+    ]
+    return (
+      components[index]
+    )
+  }
 
   return (
     <div className="App">
-      <NavBar />
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <About />
-      <Projects />
-      <Skills/>
-      <Resume />
-      <Contact />
-      <Footer />
+      <NavBar handleShow={handleShow} />
+      {renderComponent(componentIndex)}
+      <RightBar show={show} handleClose={handleClose} setComponentIndex={setComponentIndex} />
     </div>
   );
 }

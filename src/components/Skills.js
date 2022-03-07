@@ -7,7 +7,6 @@ import Skill from './Skill'
 export default function Skills() {
 
   const renderSkills = (category) => {
-    console.log(skills.category)
     return skills[category].map(skill => {
       return <Skill name={skill}/>
     });

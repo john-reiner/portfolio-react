@@ -6,7 +6,7 @@ import Typical from 'react-typical'
 
 export default function Header(props) {
   return (
-    <Col id='top-container'>
+    <Col id='header-container'>
       <Row>
         <Col >
           <Icon icon="gridicons:share-computer" id="main-icon"/>
@@ -18,7 +18,7 @@ export default function Header(props) {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col id="typical">
           <Typical
             steps={
               [
@@ -37,9 +37,9 @@ export default function Header(props) {
         </Col>
       </Row>
       <Row>
-        <Col>
+        {/* <Col>
             {props.darkMode ? <Button variant="outline-light" onClick={() => props.setDarkMode(!props.darkMode)}>Light</Button> : <Button variant="outline-dark" onClick={() => props.setDarkMode(!props.darkMode)}>Dark</Button>}
-        </Col>
+        </Col> */}
       </Row>
     </Col>
   )

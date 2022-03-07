@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 export default function Skill(props) {
     return (
         <Row className="skill">
-            {props.name}
+            <p>{props.name}</p>
             <Icon icon={"logos:" + props.name} />
         </Row>
     )
