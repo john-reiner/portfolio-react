@@ -1,0 +1,318 @@
+@import '../variables/Variables.scss';
+
+body {
+    background-color: $dark;
+}
+
+.window-container {
+    @include window();
+}
+
+.window-bar {
+    background-color: rgb(50, 50, 50);
+    height: 30px;
+    border-top-left-radius: 12px 12px;
+    border-top-right-radius: 12px 12px;
+    border-bottom: solid rgb(12, 12, 11) 1px;
+    display: flex;
+}
+
+.window-bar-buttons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52px;
+    margin-left: 7px ;
+    margin-top: 7px
+}
+
+.red-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(238, 105, 94);
+    font-size: 15px;
+}
+
+.yellow-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(245, 189, 79);
+}
+
+.green-button {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(97, 196, 84);
+}
+
+.window-bar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(157, 156, 154);
+}
+// body {
+    //     background-color: #333;
+    // }
+    
+// .mac-window-container .mac-window-bar {
+//     box-shadow: 0 24px 15px rgb(0 0 0 / 30%);
+//     width: fit-content;
+//     border: rgb(63, 61, 60) solid 1px;
+//     padding: 1em;
+//     background-color: rgb(27, 26, 24);
+//     color: rgb(214, 213, 213);
+//     border-radius: 12px;
+
+// }
+
+// .mac-window-bar {
+//     background-color: rgb(52, 51, 50);
+//     height: 30px;
+//     border-top-left-radius: 12px 12px;
+//     border-top-right-radius: 12px 12px;
+//     border-bottom: solid rgb(12, 12, 11) 1px;
+//     display: flex;
+// }
+// #about-bar-buttons {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 52px;
+//     margin-left: 7px ;
+// }
+
+
+
+
+// #logo {
+//     border-radius: 12px;
+//     background-color: rgb(33, 32, 30);
+//     color: whitesmoke;
+//     width: 20em;
+//     height: 15em;
+
+// }
+
+// #logo-content {
+//     padding: 1em;
+// }
+
+// #name {
+//     color: #333;
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 10%;
+//     font-size: 3em;
+//     font-family: 'Bowlby One SC', cursive;
+// }
+
+
+
+// #arrow:hover {
+//     cursor: pointer;
+// }
+
+
+// #header-container {
+//     height: 90vh;
+//     color: rgb(162 3 22 / 100%);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// #main-icon {
+//     font-size: 8em;
+// }
+
+// #typical {
+//     font-family: 'Share Tech Mono', monospace;
+//     color: rgb(0 252 56 / 100%);
+// }
+// #about-container {
+//     background-color: #333;
+//     color: whitesmoke;
+//     padding-bottom: 3em;
+// }
+
+// #about-row-one {
+//     padding: 2em;
+//     text-align: center;
+// }
+
+// .project {
+//     border: rgb(75, 75, 75) solid 1px;
+//     border-radius: 12px;
+//     background-color: rgb(33, 32, 30);
+//     box-shadow: 0 24px 15px rgb(0 0 0 / 30%);
+//     color: whitesmoke;
+    
+// }
+
+// #about-row-two {
+//     padding: 2em;
+//     display: flex;
+//     justify-content: center;
+// }
+
+// #photo-container {
+//     display: flex;
+//     justify-content: center;
+//     color: black;
+//     margin-bottom: 2em;
+// }
+
+// #picture {
+//     /* display: flex;
+//     flex-direction: column;
+//     width: fit-content;
+//     padding: 1em; */
+//     margin-bottom: 1em;
+    
+// }
+
+// #photo {
+//     /* border: solid red 1px; */
+//     background-color: whitesmoke;
+//     display: flex;
+//     flex-direction: column;
+//     width: fit-content;
+//     padding: 1em;
+//     box-shadow: 0 4px 6px rgb(0 0 0 / 30%)
+// }
+
+// #photo-icons {
+//     font-size: 3em;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     text-align: center;
+//     /* padding: 1em; */
+// }
+
+// #about-text-container {
+//     border: rgb(75, 75, 75) solid 1px;
+//     border-radius: 12px;
+//     background-color: rgb(33, 32, 30);
+//     box-shadow: 0 24px 15px rgb(0 0 0 / 30%)
+
+// }
+
+
+
+
+
+
+// #about-bar-title {
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: rgb(169, 168, 166);
+// }
+
+// #about-content {
+//     padding: 1em;
+// }
+
+// #about-welcome {
+//     padding: 1em;
+//     text-align: center;
+//     font-size: 1.5em;
+// }
+
+// #projects-container {
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+// #projects-row {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .project-container {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .project-photo {
+//     box-shadow: 0 4px 6px rgb(0 0 0 / 50%);
+//     width: 18rem;
+//     text-align: center;
+//     border-bottom-left-radius: 12px 12px;
+//     border-bottom-right-radius: 12px 12px;
+
+// }
+
+// .project-photo:hover {
+//     cursor: pointer;
+// }
+
+// .project-photo:active {
+//     box-shadow: none;
+// }
+
+// #project-images-container {
+//     max-width: 300px;
+// }
+
+// #project-images-row {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 2em;
+// }
+
+// #skills-container {
+//     background-color: #333;
+//     color: whitesmoke;
+// }
+
+// .skills-list {
+//     box-shadow: 0 4px 6px rgb(0 0 0 / 100%);
+//     margin: 0 1em 3em 1em;
+    
+// }
+
+// .skills-title {
+//     text-align: center;
+// }
+
+// .skill {
+//     display: flex;
+//     font-size: 1.5em;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0.1em;
+//     margin: 0;
+// }
+
+// .skill svg{
+//     width: fit-content;
+// }
+
+// .skill p{
+//     width: fit-content;
+//     margin: 0%;
+// }
+
+// #resume-container {
+//     background-color: whitesmoke;
+// }
+
+// #contact-container {
+//     height: 100vh;
+// }

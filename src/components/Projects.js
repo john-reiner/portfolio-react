@@ -23,11 +23,22 @@ export default function Projects(props) {
     return props.projects.map(project => {
       return (
         <Col className="mb-2 mt-4 project-container">
-          <Image rounded src={project.main_image_url} width="300" height="300" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
+          <div className="project">
+            <div id="about-bar">
+                  <div id="about-bar-buttons">
+                    <div id="red-button"></div>
+                    <div id="yellow-button"></div>
+                    <div id="green-button"></div>
+                  </div>
+                  <div id="about-bar-title"><b>{project.name}</b></div>
+                </div>
+            <Image  src={project.main_image_url} width="300" height="300" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
+          </div>
         </Col>
       )
     })
   }
+
   
   const findProject = (id) => {
     let project = props.projects.find(project => project.id === id)

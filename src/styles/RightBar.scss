@@ -1,0 +1,64 @@
+@import '../variables/Variables.scss';
+
+#rightbar {
+    background-color: $dark;
+    color: whitesmoke;
+    width: 75%;
+    max-width: 300px;
+}
+
+#rightbar-title {
+    color: $red;
+    font-family: $name;
+    font-size: 2em;
+}
+
+.rightbar-link {
+    color: $text-color;
+    font-family: $text-font;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+.rightbar-link:hover {
+    /* border: yellow solid; */
+    cursor: pointer;
+    background-color: #222;
+    // color: $red;
+}
+
+.rightbar-link svg {
+    margin-right: 1em;
+    width: fit-content;
+}
+.rightbar-link p {
+    width: fit-content;
+    margin: 0;
+}
+
+#rightbar-social-row {
+    position: absolute;
+    bottom:0px;
+    left:12px;
+    width: fill;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #222;
+    padding: 1em;
+}
+
+.social-icon {
+    color: $text-color;
+    width: fit-content;
+    font-size: 3em;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: $red;
+}

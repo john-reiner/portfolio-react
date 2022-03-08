@@ -1,0 +1,10 @@
+@import '../variables/Variables.scss';
+
+#nav-bar-text {
+    color: $text-color;
+    font-family: $text-font;
+}
+
+#nav-bar-text:hover {
+    cursor: pointer;
+}

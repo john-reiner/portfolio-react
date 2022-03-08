@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import React, { useState, useEffect } from 'react';
 
 import {Container, Row, Offcanvas } from 'react-bootstrap' 
@@ -43,7 +43,7 @@ function App() {
     )
   }
   return (
-    <div className="App">
+    <div>
       <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex).type.name}/>
       {renderComponent(componentIndex)}
       <RightBar show={show} handleClose={handleClose} setComponentIndex={setComponentIndex} />

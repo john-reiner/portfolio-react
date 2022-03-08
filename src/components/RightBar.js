@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/RightBar.css'
 import {Offcanvas, Row } from 'react-bootstrap' 
 import { Icon } from '@iconify/react';
 
@@ -9,7 +10,7 @@ export default function RightBar(props) {
     return (
         <Offcanvas show={props.show} onHide={props.handleClose} placement={'end'} id="rightbar" >
             <Offcanvas.Header closeButton closeVariant='white' >
-            <Offcanvas.Title>Portfolio</Offcanvas.Title>
+            <Offcanvas.Title id="rightbar-title">Portfolio</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(0)}>
@@ -31,6 +32,15 @@ export default function RightBar(props) {
                 <Row className="rightbar-link" onClick={() => props.setComponentIndex(4)}>
                     <Icon icon="fluent:contact-card-16-regular" />
                     <p>Contact</p>
+                </Row>
+                <Row id="rightbar-social-row">
+                    <a href="https://www.linkedin.com/in/john-reiner/" target="_blank" rel="noreferrer"  className="social-icon">
+                        <Icon icon="fa:linkedin-square"  />
+                    </a>
+                    <a href="https://github.com/john-reiner" target="_blank" rel="noreferrer" className="social-icon" >
+                        <Icon icon="fa:github-square"  />
+                    </a>
+                    
                 </Row>
             </Offcanvas.Body>
         </Offcanvas>

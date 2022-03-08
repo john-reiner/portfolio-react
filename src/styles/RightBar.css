@@ -1,0 +1,80 @@
+#rightbar {
+  background-color: #333;
+  color: whitesmoke;
+  width: 75%;
+  max-width: 300px;
+}
+
+#rightbar-title {
+  color: #a20416;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 2em;
+}
+
+.rightbar-link {
+  color: #c7a579;
+  font-family: "Play", sans-serif;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: large;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+.rightbar-link:hover {
+  /* border: yellow solid; */
+  cursor: pointer;
+  background-color: #222;
+}
+
+.rightbar-link svg {
+  margin-right: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.rightbar-link p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+#rightbar-social-row {
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #222;
+  padding: 1em;
+}
+
+.social-icon {
+  color: #c7a579;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3em;
+}
+
+.social-icon:hover {
+  cursor: pointer;
+  color: #a20416;
+}
+/*# sourceMappingURL=RightBar.css.map */

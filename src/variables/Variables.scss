@@ -1,0 +1,33 @@
+// colors
+$red: rgb(162, 4, 22);
+$dark: #333;
+$green: rgb(66, 255, 2);
+$text-color: rgb(199, 165, 121);
+$border-color: rgb(78, 76, 75);
+//fonts
+
+$name: 'Bowlby One SC', cursive;
+$tech: 'Share Tech Mono', monospace;
+$text-font: 'Play', sans-serif;
+
+// mixins
+@mixin window {
+    box-shadow: 0 24px 15px rgb(0, 0, 0);
+    width: fit-content;
+    border: $red solid 1px;
+    // padding: 1em;
+    background-color: rgb(27, 26, 24);
+    color: rgb(214, 213, 213);
+    border-radius: 12px;
+}
+
+@mixin window-bar {
+    background-color: rgb(52, 51, 50);
+    height: 30px;
+    border-top-left-radius: 12px 12px;
+    border-top-right-radius: 12px 12px;
+    border-bottom: solid rgb(12, 12, 11) 1px;
+    display: flex;
+
+}
+
