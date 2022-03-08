@@ -31,3 +31,19 @@ $text-font: 'Play', sans-serif;
 
 }
 
+@mixin page-container($image-url) {
+    min-height: 94vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url($image-url);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    // border: solid red 1px;
+    
+}
+

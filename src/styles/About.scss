@@ -1,0 +1,27 @@
+@import '../variables/Variables.scss';
+
+#about-container {
+    @include page-container("https://images.unsplash.com/photo-1530947443747-bcaaacd048d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80");
+}
+
+#about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+    margin-top: 1em;
+}
+
+#about-photo-container {
+    padding: 1em;
+}
+
+#photo-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-text-container {
+    padding: 1em;
+}
