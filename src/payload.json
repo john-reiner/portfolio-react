@@ -1,6 +1,8 @@
 {
     "skills" : {
-        "languages" : [],
+        "languages" : [
+            {"name": "ruby", "icon": "logos:rubygems"}
+        ],
         "frameworks" : [],
         "technologies" : []
     },

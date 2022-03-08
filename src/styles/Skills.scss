@@ -1,0 +1,43 @@
+@import '../variables/Variables.scss';
+
+#skills-container {
+    @include page-container("https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")
+}
+
+#skills-row {
+    display: flex;
+    justify-content: space-around;
+    border: solid red;
+}
+
+.skills-coll {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin-bottom: 3em;
+}
+
+.skills-category-container {
+    padding: 1em;
+    min-width: 300px;
+}
+
+.skill {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1em;
+    margin: 0;
+    font-family: $text-font;
+    color: $text-color;
+}
+
+.skill svg{
+    width: fit-content;
+}
+
+.skill p{
+    width: fit-content;
+    margin: 0%;
+}

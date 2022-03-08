@@ -35,7 +35,7 @@ function App() {
         <Home />,
         <About />,
         <Projects projects={payload.projects}/>,
-        <Skills/>,
+        <Skills skills={payload.skills}/>,
         <Contact />
     ]
     return (

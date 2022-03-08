@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import '../styles/Projects.css'
 import ProjectModal from './ProjectModal'
 import {Col, Row, Container, Image} from 'react-bootstrap'
 
@@ -23,16 +24,20 @@ export default function Projects(props) {
     return props.projects.map(project => {
       return (
         <Col className="mb-2 mt-4 project-container">
-          <div className="project">
-            <div id="about-bar">
-                  <div id="about-bar-buttons">
-                    <div id="red-button"></div>
-                    <div id="yellow-button"></div>
-                    <div id="green-button"></div>
+          <div className="window-container">
+              <div className="window-bar">
+                  <div className="window-bar-buttons">
+                  <div className="red-button"></div>
+                  <div className="yellow-button"></div>
+                  <div className="green-button"></div>
                   </div>
-                  <div id="about-bar-title"><b>{project.name}</b></div>
+                  <div className="window-bar-content">John Reiner</div>
+              </div>
+              {/* content Start */}
+                <div className="project-image-container">
+                  <Image src={project.main_image_url} width="300" height="300" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
                 </div>
-            <Image  src={project.main_image_url} width="300" height="300" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
+              {/* {Content finish} */}
           </div>
         </Col>
       )
