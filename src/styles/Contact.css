@@ -1,0 +1,73 @@
+#contact-container {
+  min-height: 94vh;
+  max-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contact-col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form-container {
+  padding: 1em;
+  width: 90vw;
+  max-width: 800px;
+  color: #c7a579;
+  font-family: "Play", sans-serif;
+}
+
+.text-input {
+  border: #c7a579 solid 2px;
+  width: 100%;
+  background-color: #1b1a18;
+  color: #c7a579;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.text-area {
+  border: #c7a579 solid 2px;
+  width: 100%;
+  background-color: #1b1a18;
+  color: #c7a579;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+#contact-submit {
+  border: #c7a579 solid 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #1b1a18;
+  color: #a20416;
+  width: 100%;
+}
+
+#contact-submit:hover {
+  background-color: #111;
+}
+/*# sourceMappingURL=Contact.css.map */

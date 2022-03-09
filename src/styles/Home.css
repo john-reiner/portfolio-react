@@ -1,5 +1,6 @@
 #home-container {
-  height: 94vh;
+  min-height: 94vh;
+  max-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +11,10 @@
       -ms-flex-align: center;
           align-items: center;
   background-image: url("https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+  background-position: bottom left;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #home-logo {
@@ -27,7 +30,7 @@
 }
 
 #typical {
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Play", sans-serif;
   color: #c7a579;
 }
 /*# sourceMappingURL=Home.css.map */

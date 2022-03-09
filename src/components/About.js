@@ -52,6 +52,6 @@ export default function About() {
           </Col>
         </Row>
       </Container>
-    // </div>
+    </div>
   )
 }

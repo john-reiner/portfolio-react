@@ -4,6 +4,7 @@ $dark: #333;
 $green: rgb(66, 255, 2);
 $text-color: rgb(199, 165, 121);
 $border-color: rgb(78, 76, 75);
+$screen-color: rgb(27, 26, 24);
 //fonts
 
 $name: 'Bowlby One SC', cursive;
@@ -14,9 +15,9 @@ $text-font: 'Play', sans-serif;
 @mixin window {
     box-shadow: 0 24px 15px rgb(0, 0, 0);
     width: fit-content;
-    border: $red solid 1px;
+    border: $border-color solid 1px;
     // padding: 1em;
-    background-color: rgb(27, 26, 24);
+    background-color: $screen-color ;
     color: rgb(214, 213, 213);
     border-radius: 12px;
 }

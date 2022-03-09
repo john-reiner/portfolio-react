@@ -23,7 +23,6 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: solid red;
 }
 
 .skills-coll {
