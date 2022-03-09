@@ -15,9 +15,9 @@ export default function Skills(props) {
 
   return (
     <div id="skills-container">
-      <Container fluid>
+      <Container >
         <Row id="skills-row">
-          <Col className="skills-coll">
+          <Col className="mt-4 skills-coll">
           <div className="window-container">
             <div className="window-bar">
                 <div className="window-bar-buttons">
@@ -34,7 +34,7 @@ export default function Skills(props) {
                 {/* {Content finish} */}
             </div>
           </Col>
-          <Col className="skills-coll">
+          <Col className="mt-4 skills-coll">
           <div className="window-container">
             <div className="window-bar">
                 <div className="window-bar-buttons">
@@ -46,12 +46,12 @@ export default function Skills(props) {
             </div>
             {/* content Start */}
             <div className="skills-category-container">
-
+            {renderSkills('frameworks')}
             </div>
             {/* {Content finish} */}
           </div>
           </Col>
-          <Col className="skills-coll">
+          <Col className="mt-4 skills-coll">
           <div className="window-container">
             <div className="window-bar">
                 <div className="window-bar-buttons">
@@ -63,7 +63,7 @@ export default function Skills(props) {
             </div>
             {/* content Start */}
             <div className="skills-category-container">
-
+            {renderSkills('technologies')}
             </div>
             {/* {Content finish} */}
         </div>

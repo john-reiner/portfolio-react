@@ -23,7 +23,7 @@ export default function Projects(props) {
   const renderProjects = () => {
     return props.projects.map(project => {
       return (
-        <Col className="mb-2 mt-4 project-container">
+        <Col className="mb-4 mt-4 project-container">
           <div className="window-container">
               <div className="window-bar">
                   <div className="window-bar-buttons">
@@ -31,11 +31,11 @@ export default function Projects(props) {
                   <div className="yellow-button"></div>
                   <div className="green-button"></div>
                   </div>
-                  <div className="window-bar-content">John Reiner</div>
+                  <div className="window-bar-content">{project.name}</div>
               </div>
               {/* content Start */}
                 <div className="project-image-container">
-                  <Image src={project.main_image_url} width="300" height="300" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
+                  <Image src={project.main_image_url} width="300" height="200" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
                 </div>
               {/* {Content finish} */}
           </div>

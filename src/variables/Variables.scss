@@ -12,6 +12,20 @@ $tech: 'Share Tech Mono', monospace;
 $text-font: 'Play', sans-serif;
 
 // mixins
+
+@mixin button($border-color, $background-color, $text-color) {
+    border: $border-color solid 2px;
+    border-radius: 5px;
+    // text-align: center;
+    font-size: 1.3em;
+    background-color: $background-color;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin window {
     box-shadow: 0 24px 15px rgb(0, 0, 0);
     width: fit-content;

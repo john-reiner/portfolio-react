@@ -33,7 +33,7 @@ function App() {
 
     const components = [
         <Home />,
-        <About />,
+        <About about={payload.about}/>,
         <Projects projects={payload.projects}/>,
         <Skills skills={payload.skills}/>,
         <Contact />

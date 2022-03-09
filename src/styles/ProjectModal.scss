@@ -1,0 +1,53 @@
+@import '../variables/Variables.scss';
+
+.project-modal {
+    // background-color: $dark;
+    font-family: $text-font;
+}
+
+.modal-content {
+    background-color: $screen-color;
+    color: $text-color;
+    border: $border-color, 1px solid;
+    border-radius: 12px;
+}
+
+.project-modal-header {
+    // background-color: $dark;
+    border-bottom: solid 1px $text-color;
+    display: flex;
+    justify-content: center;
+
+}
+
+// .project-images-container {
+//     width: 100%;
+// }
+
+// .project-images-row {
+//     display: flex;
+//     justify-content: center;
+// }
+
+.picture-item {
+    text-align: center;
+    // border: solid red;
+}
+
+.project-modal-footer {
+    border-top: solid 1px $text-color;
+}
+
+.project-modal-button {
+    text-decoration: none;
+    button {
+        @include button($text-color, $screen-color, $text-color);
+        width: fit-content;
+    }
+    button:hover {
+        color: $border-color;
+    }
+    svg {
+        margin-left: .5em;
+    }
+}

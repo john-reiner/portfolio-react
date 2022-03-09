@@ -5,7 +5,7 @@ import {Container, Navbar} from 'react-bootstrap'
 
 export default function NavBar(props) {
     return (
-        <Navbar bg="dark" variant="dark" sticky="top">
+        <Navbar id="navbar" sticky="top">
             <Container fluid>
                 <Navbar.Brand onClick={props.handleShow} id="nav-bar-text">
                 <Icon 

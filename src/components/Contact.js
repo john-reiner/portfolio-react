@@ -45,21 +45,6 @@ export default function Contact() {
               <textarea placeholder="Message" className="text-area" id="contact-message" name="message" rows="4" cols="50" value={message.message} onChange={handleChange}/><br></br>
               <button id="contact-submit" type="submit"> Contact Me <Icon icon="bi:send"/> </button>
             </form> 
-              {/* <Form>
-              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label>Name:</Form.Label>
-                  <Form.Control type="text" placeholder="name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label>Email Address:</Form.Label>
-                  <Form.Control type="email" placeholder="email@example.com" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Message:</Form.Label>
-                  <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <div id="send-button">Contact Me <Icon icon="bi:send" /></div>
-              </Form> */}
             </div>
 
             {/* {Content finish} */}

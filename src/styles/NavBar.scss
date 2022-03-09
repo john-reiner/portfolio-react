@@ -1,5 +1,9 @@
 @import '../variables/Variables.scss';
 
+#navbar {
+    background-color: $screen-color;
+}
+
 #nav-bar-text {
     color: $text-color;
     font-family: $text-font;
