@@ -31,7 +31,7 @@ export default function Projects(props) {
                   <div className="yellow-button"></div>
                   <div className="green-button"></div>
                   </div>
-                  <div className="window-bar-content">{project.name}</div>
+                  <div className="window-bar-content">{project.name.substring(0, 25)}</div>
               </div>
               {/* content Start */}
                 <div className="project-image-container">
