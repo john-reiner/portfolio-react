@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/ProjectModal.css'
-import {Col, Row, Modal, Button, Carousel} from 'react-bootstrap'
+import {Col, Row, Modal, Carousel} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function ProjectModal(props) {

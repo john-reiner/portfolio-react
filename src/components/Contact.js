@@ -11,12 +11,31 @@ export default function Contact() {
     email: "",
     message: ""
   });
+  const [sendingMessage, setSendingMessage] = useState(false);
 
   const handleChange = (e) => setMessage({...message, [e.target.name] : e.target.value})
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(message)
+    setSendingMessage(true)
+    fetch('http://localhost:3001/portfolios/1/messages.json', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({"message": message}),
+    })
+    .then(response => response.json())
+    .then(data => {
+      setSendingMessage(false)
+      alert("Message Sent!")
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      setSendingMessage(false)
+      alert("Message Failed!")
+      console.error('Error:', error);
+    });
   }
   
 
@@ -43,7 +62,7 @@ export default function Contact() {
               <input className="text-input" type="email" id="contact-email" name="email" value={message.email} onChange={handleChange} placeholder="Email"/><br></br>
               {/* <label for="w3review">Message:</label><br></br> */}
               <textarea placeholder="Message" className="text-area" id="contact-message" name="message" rows="4" cols="50" value={message.message} onChange={handleChange}/><br></br>
-              <button id="contact-submit" type="submit"> Contact Me <Icon icon="bi:send"/> </button>
+              {sendingMessage ? "Sending..." : <button id="contact-submit" type="submit"> Contact Me <Icon icon="bi:send"/> </button>}
             </form> 
             </div>
 

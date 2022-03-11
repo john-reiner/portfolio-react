@@ -21,7 +21,7 @@ export default function About(props) {
             </div>
             {/* content Start */}
             <div id="about-photo-container">
-              <Image  src={props.about.about_photo} id="picture" />
+              <Image  src={props.about.about_photo} id="picture" width="200"/>
                 <div id="photo-icons">
                   <a href="https://www.linkedin.com/in/john-reiner/" target="_blank" rel="noreferrer"  className="social-icon">
                       <Icon icon="fa:linkedin-square"  />
@@ -46,8 +46,8 @@ export default function About(props) {
               </div>
               {/* content Start */}
                 <div id="about-text-container">
-                  <p>{props.about.about_title}</p>
-                  <p>{props.about.about_text}</p>
+                  <p>{props.about.welcome_message}</p>
+                  <p>{props.about.about_me_text}</p>
                 </div>
               {/* {Content finish} */}
             </div>
