@@ -4,7 +4,7 @@ import {Col, Row, Container, Image} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function About(props) {
-
+  console.log(props.about)
   return (
     <div id="about-container" >
       <Container  >
@@ -21,7 +21,7 @@ export default function About(props) {
             </div>
             {/* content Start */}
             <div id="about-photo-container">
-              <Image  src={props.about.about_photo} id="picture" width="200"/>
+              <Image  src={"http://localhost:3001/" + props.about.image_url} id="picture" width="200"/>
                 <div id="photo-icons">
                   <a href="https://www.linkedin.com/in/john-reiner/" target="_blank" rel="noreferrer"  className="social-icon">
                       <Icon icon="fa:linkedin-square"  />

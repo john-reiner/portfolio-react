@@ -5,13 +5,14 @@ import { Icon } from '@iconify/react';
 
 export default function ProjectModal(props) {
 
+    console.log(props.project)
     const renderCarouselItems = () => {
         if (props.project.images) {
             return props.project.images.map(image => {
                 return (
                     <Carousel.Item className="picture-item">
                         <img
-                            src={image.url}
+                            src={"http://localhost:3001/" + image.image_url}
                             alt={image.description}
                             className="picture-item"
                             width="300"

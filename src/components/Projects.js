@@ -49,7 +49,7 @@ export default function Projects(props) {
     let project = props.projects.find(project => project.id === id)
     setProject(project)
   }
-
+  console.log(props.projects)
   return (
       <Container fluid id="projects-container">
         <ProjectModal show={projectModalShow} onHide={() => setProjectModalShow(false)} project={project}/>
