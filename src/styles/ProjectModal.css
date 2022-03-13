@@ -25,7 +25,8 @@
 }
 
 .picture-item {
-  text-align: center;
+  width: 100%;
+  min-height: 300px;
 }
 
 .project-modal-footer {

@@ -20,17 +20,17 @@ export default function ProjectModal(props) {
         .then(markdown => setGithubmd(markdown))
     }
 
+    console.log(githubmd)
+
     const renderCarouselItems = () => {
         if (props.project.images) {
             return props.project.images.map(image => {
                 return (
-                    <Carousel.Item className="picture-item">
+                    <Carousel.Item>
                         <img
                             src={"http://localhost:3001/" + image.image_url}
                             alt={image.description}
                             className="picture-item"
-                            width="300"
-                            height="300"
                         />
                     </Carousel.Item>
                 )
@@ -46,7 +46,7 @@ export default function ProjectModal(props) {
             centered
             className="project-modal"
             >
-            <Modal.Header className="project-modal-header">
+            <Modal.Header closeButton closeVariant='white' className="project-modal-header">
             
                 <Modal.Title id="contained-modal-title-vcenter">
                 {props.project.name}
@@ -63,8 +63,7 @@ export default function ProjectModal(props) {
             </Row>
             <Row>
                 <Col className="project-body">
-
-                    {githubmd === "400: Invalid request" ? props.project.description : <Markdown>{githubmd}</Markdown>}
+                    {githubmd === "400: Invalid request" || githubmd === "404: Not Found" ? props.project.description : <Markdown>{githubmd}</Markdown>}
                 </Col>
             </Row>
                 
