@@ -35,7 +35,7 @@ export default function Projects(props) {
               </div>
               {/* content Start */}
                 <div className="project-image-container">
-                  <Image src={project.main_image_url} width="300" height="200" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
+                  <Image src={"http://localhost:3001/" + project.main_image_url} width="300" height="200" className="project-photo" onClick={() => handleProjectModalShow(project.id)}/>
                 </div>
               {/* {Content finish} */}
           </div>

@@ -1,11 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import Markdown from 'markdown-to-jsx'
 import '../styles/ProjectModal.css'
 import {Col, Row, Modal, Carousel} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function ProjectModal(props) {
 
-    console.log(props.project)
+    const [githubmd, setGithubmd] = useState('');
+
+    useEffect(() => {
+        if (props.project.github) {
+            fetchGithubReadme()
+        }
+    }, [props.project.github]);
+
+    const fetchGithubReadme = () => {
+        fetch(`https://raw.githubusercontent.com/${props.project.github.slice(19)}/main/README.md`)
+        .then(response => response.text())
+        .then(markdown => setGithubmd(markdown))
+    }
+
     const renderCarouselItems = () => {
         if (props.project.images) {
             return props.project.images.map(image => {
@@ -47,7 +61,13 @@ export default function ProjectModal(props) {
                     <hr></hr>
                 </Col>
             </Row>
-                <p>{props.project.description}</p>
+            <Row>
+                <Col className="project-body">
+
+                    {githubmd === "400: Invalid request" ? props.project.description : <Markdown>{githubmd}</Markdown>}
+                </Col>
+            </Row>
+                
             </Modal.Body>
             <Modal.Footer className="project-modal-footer">
                 <a href={props.project.github} target="_blank" rel="noreferrer" className='project-modal-button'> <button> GitHub <Icon icon="akar-icons:github-fill" /></button></a>

@@ -20,14 +20,10 @@
 
 }
 
-// .project-images-container {
-//     width: 100%;
-// }
-
-// .project-images-row {
-//     display: flex;
-//     justify-content: center;
-// }
+.project-body {
+    max-height: 40vh;
+    overflow: scroll;
+}
 
 .picture-item {
     text-align: center;
