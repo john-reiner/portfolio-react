@@ -20,13 +20,13 @@ export default function ProjectModal(props) {
         .then(markdown => setGithubmd(markdown))
     }
 
-    console.log(githubmd)
-
     const renderCarouselItems = () => {
         if (props.project.images) {
+            let key_id = 0
             return props.project.images.map(image => {
+                key_id ++
                 return (
-                    <Carousel.Item>
+                    <Carousel.Item key={key_id}>
                         <img
                             src={"http://localhost:3001/" + image.image_url}
                             alt={image.description}

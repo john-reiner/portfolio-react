@@ -23,7 +23,7 @@ export default function Projects(props) {
   const renderProjects = () => {
     return props.projects.map(project => {
       return (
-        <Col className="mb-4 mt-4 project-container">
+        <Col className="mb-4 mt-4 project-container" key={project.id}>
           <div className="window-container">
               <div className="window-bar">
                   <div className="window-bar-buttons">
@@ -49,7 +49,7 @@ export default function Projects(props) {
     let project = props.projects.find(project => project.id === id)
     setProject(project)
   }
-  console.log(props.projects)
+
   return (
       <Container fluid id="projects-container">
         <ProjectModal show={projectModalShow} onHide={() => setProjectModalShow(false)} project={project}/>

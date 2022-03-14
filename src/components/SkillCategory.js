@@ -7,10 +7,10 @@ export default function SkillCategory(props) {
 
     const renderSkills = () => {
         return props.skills.map(skill => {
-            return <Skill name={skill.name} icon={skill.icon}/>
+            return <Skill name={skill.name} icon={skill.icon} key={skill.id}/>
         });
     }
-    console.log(props)
+
     return (
         <Col className="mt-4 skills-coll">
             <div className="window-container">

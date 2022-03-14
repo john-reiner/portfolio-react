@@ -4,7 +4,7 @@ import {Col, Row, Container, Image} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function About(props) {
-  console.log(props.about)
+
   return (
     <div id="about-container" >
       <Container  >

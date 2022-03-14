@@ -1,11 +1,11 @@
 import React from 'react'
 import '../styles/Home.css'
-import {Col, Row, Container} from 'react-bootstrap'
-import { Icon } from '@iconify/react';
+import {Col, Row} from 'react-bootstrap'
 import Typical from 'react-typical'
 
 
 export default function Home(props) {
+
   return (
     <div id='home-container'>
       <Row>
@@ -23,22 +23,21 @@ export default function Home(props) {
                   </div>
                   {/* content Start */}
                   <div id="home-logo">
+                    <a id="contact-submit" href={"http://localhost:3001/" + props.resume_url} download> Download Resume </a>
                     <h1 id="name">John Reiner</h1>
                     <div id="typical">
                       <Typical
                         steps={
                           [
-                            'Software Developer', 1000,
+                            'Software Developer', 5000,
                             'Solutions Engineer', 1000,
                             'Ruby on Rails', 1000,
                             'React JS', 1000,
-                            'Python', 1000,
                             'Python', 1000,
                           ]
                         }
                         loop={Infinity}
                         wrapper="h4"
-                        
                       />
                     </div>
                   </div>

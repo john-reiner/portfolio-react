@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Skills.css'
-import {Col, Row, Container} from 'react-bootstrap'
-import Skill from './Skill'
+import { Row, Container} from 'react-bootstrap'
 import SkillCategory from './SkillCategory';
 
 export default function Skills(props) {

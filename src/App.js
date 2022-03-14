@@ -40,11 +40,10 @@ function App() {
     .then(data => setPortfolioPayload(data));
   }
 
-
   const renderComponent = (index) => {
 
     const components = [
-        <Home />,
+        <Home resume_url={portfolioPayload.resume_url}/>,
         <About about={portfolioPayload}/>,
         <Projects projects={portfolioPayload.projects}/>,
         <Skills skills={portfolioPayload.skills}/>,
@@ -58,7 +57,7 @@ function App() {
   return (
     <div>
       <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex).type.name}/>
-      {renderComponent(componentIndex)}
+        {renderComponent(componentIndex)}
       <RightBar show={show} handleClose={handleClose} setComponentIndex={setComponentIndex} />
     </div>
   );
