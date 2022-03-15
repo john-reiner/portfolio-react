@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,mBAAmB,CAAC;EC+ChB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,gBAAgB,EAAE,qKAAe;EACjC,mBAAmB,EAAE,WAAW;EAChC,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;EACtB,qBAAqB,EAAE,KAAK;CDtD/B;;AAID,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAE1B;;AAED,AAAA,wBAAwB,CAAC;EACrB,OAAO,EAAE,GAAG;CACf;;AAED,AAAA,wBAAwB,AAAA,MAAM,CAAC;EAC3B,MAAM,EAAE,OAAO;CAClB",
     "sources": [
         "Projects.scss",
-        "../variables/Variables.scss"
+        "../../../variables/Variables.scss"
     ],
     "names": [],
     "file": "Projects.css"

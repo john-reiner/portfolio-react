@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,gBAAgB,ECGL,OAAe;CDF7B;;AAED,AAAA,aAAa,CAAC;EACV,KAAK,ECHI,OAAkB;EDI3B,WAAW,ECGH,MAAM,EAAE,UAAU;CDF7B;;AAED,AAAA,aAAa,AAAA,MAAM,CAAC;EAChB,MAAM,EAAE,OAAO;CAClB",
     "sources": [
         "NavBar.scss",
-        "../variables/Variables.scss"
+        "../../../variables/Variables.scss"
     ],
     "names": [],
     "file": "NavBar.css"
