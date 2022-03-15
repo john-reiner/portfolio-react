@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../styles/Contact.css'
+import './styles/Contact.css'
 import {Col, Row, Container} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 

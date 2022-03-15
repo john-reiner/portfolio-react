@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/RightBar.css'
+import './styles/RightBar.css'
 import {Offcanvas, Row } from 'react-bootstrap' 
 import { Icon } from '@iconify/react';
 

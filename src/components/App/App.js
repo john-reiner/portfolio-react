@@ -1,26 +1,23 @@
 import './styles/App.css';
 import React, { useState, useEffect } from 'react';
 
-// import {Container, Row, Offcanvas } from 'react-bootstrap' 
-
-// import payload from './payload.json'
-
-import About from './components/About'
-import Contact from './components/Contact'
-// import Footer from './components/Footer'
-import Home from './components/Home'
-import Projects from './components/Projects'
-// import Resume from './components/Resume'
-import Skills from './components/Skills'
-import NavBar from './components/NavBar';
-import RightBar from './components/RightBar';
+// Imported components
+import About from '../About/About'
+import Contact from '../Contact/Contact'
+import Home from '../Home/Home'
+import Projects from '../Projects/Projects'
+import Skills from '../Skills/Skills'
+import NavBar from '../NavBar/NavBar';
+import RightBar from '../RightBar/RightBar';
 
 function App() {
 
+  // States
   const [componentIndex, setComponentIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [portfolioPayload, setPortfolioPayload] = useState({});
 
+  // Effects
   useEffect(() => {
     fetchPortfolioPayload()
   }, []);
@@ -31,6 +28,7 @@ function App() {
     }
   }, [componentIndex]);
 
+  // Functions
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -53,7 +51,7 @@ function App() {
       components[index]
     )
   }
-
+  console.log(show)
   return (
     <div>
       <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex).type.name}/>

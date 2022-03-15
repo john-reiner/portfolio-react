@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Home.css'
+import './styles/Home.css'
 import {Col, Row} from 'react-bootstrap'
 import Typical from 'react-typical'
 
@@ -23,7 +23,7 @@ export default function Home(props) {
                   </div>
                   {/* content Start */}
                   <div id="home-logo">
-                    <a id="contact-submit" href={"http://localhost:3001/" + props.resume_url} download> Download Resume </a>
+                    <a id="contact-submit" href={props.resume_url} download> Download Resume </a>
                     <h1 id="name">John Reiner</h1>
                     <div id="typical">
                       <Typical
@@ -49,9 +49,6 @@ export default function Home(props) {
               <Col id="typical">
               </Col>
             </Row>
-
-              {/* </div> */}
-          {/* </div> */}
         </Col>
       </Row>
     </div>

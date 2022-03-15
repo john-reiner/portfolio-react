@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/NavBar.css'
+import './styles/NavBar.css'
 import { Icon } from '@iconify/react';
 import {Container, Navbar} from 'react-bootstrap'
 

@@ -28,7 +28,7 @@ export default function ProjectModal(props) {
                 return (
                     <Carousel.Item key={key_id}>
                         <img
-                            src={"http://localhost:3001/" + image.image_url}
+                            src={image.image_url}
                             alt={image.description}
                             className="picture-item"
                         />

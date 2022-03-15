@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import '../styles/Projects.css'
-import ProjectModal from './ProjectModal'
+import './styles/Projects.css'
+import ProjectModal from './components/ProjectModal'
 import {Col, Row, Container, Image} from 'react-bootstrap'
 
 export default function Projects(props) {
