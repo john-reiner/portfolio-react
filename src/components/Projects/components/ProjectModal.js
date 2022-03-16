@@ -6,6 +6,8 @@ import { Icon } from '@iconify/react';
 
 export default function ProjectModal(props) {
 
+    console.log(props)
+
     const [githubmd, setGithubmd] = useState('');
 
     useEffect(() => {
