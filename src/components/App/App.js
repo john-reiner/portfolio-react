@@ -41,7 +41,7 @@ function App() {
   const renderComponent = (index) => {
 
     const components = [
-        <Home resume_url={portfolioPayload.resume_url}/>,
+        <Home setComponentIndex={setComponentIndex} resume_url={portfolioPayload.resume_url}/>,
         <About about={portfolioPayload}/>,
         <Projects projects={portfolioPayload.projects}/>,
         <Skills skills={portfolioPayload.skills}/>,
@@ -51,7 +51,7 @@ function App() {
       components[index]
     )
   }
-  console.log(show)
+  console.log(componentIndex)
   return (
     <div>
       <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex).type.name}/>

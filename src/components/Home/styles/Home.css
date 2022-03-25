@@ -33,4 +33,47 @@
   font-family: "Play", sans-serif;
   color: #c7a579;
 }
+
+.buttons-home {
+  border: #c7a579 solid 2px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background-color: #1b1a18;
+  color: #a20416;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.buttons-home:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+#resume-link {
+  border: #c7a579 solid 2px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background-color: #1b1a18;
+  color: #a20416;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
 /*# sourceMappingURL=Home.css.map */

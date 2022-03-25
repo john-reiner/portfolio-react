@@ -1,4 +1,4 @@
-@import '../variables/Variables.scss';
+@import '../../../variables/Variables.scss';
 
 #home-container {
     @include page-container("https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80")
@@ -19,4 +19,17 @@
 #typical {
     font-family: $text-font;
     color: $text-color;
+}
+
+.buttons-home {
+    @include button($text-color, $screen-color, $red);
+}
+
+.buttons-home:hover {
+    background-color: #111;
+    cursor: pointer;
+}
+
+#resume-link {
+    @include button($text-color, $screen-color, $red);
 }

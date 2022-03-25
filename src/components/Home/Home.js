@@ -23,13 +23,17 @@ export default function Home(props) {
                   </div>
                   {/* content Start */}
                   <div id="home-logo">
-                    <a id="contact-submit" href={props.resume_url} download> Download Resume </a>
+                    <Row>
+                      <Col><a id="resume-link" href={props.resume_url} download> Download Resume </a></Col>
+                      <Col><button className="buttons-home" onClick={() => props.setComponentIndex(4)} > Contact Me </button></Col>
+                    </Row>
+                    <hr></hr>
                     <h1 id="name">John Reiner</h1>
                     <div id="typical">
                       <Typical
                         steps={
                           [
-                            'Software Developer', 5000,
+                            'Software Developer', 1000,
                             'Solutions Engineer', 1000,
                             'Ruby on Rails', 1000,
                             'React JS', 1000,

@@ -11,6 +11,7 @@ export default function Contact() {
     email: "",
     message: ""
   });
+  const [messageErrors, setMessageErrors] = useState(false);
   const [sendingMessage, setSendingMessage] = useState(false);
 
   const handleChange = (e) => setMessage({...message, [e.target.name] : e.target.value})
@@ -19,7 +20,7 @@ export default function Contact() {
     e.preventDefault()
     setSendingMessage(true)
     fetch('http://localhost:3001/portfolios/1/messages.json', {
-      method: 'POST', // or 'PUT'
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -27,9 +28,14 @@ export default function Contact() {
     })
     .then(response => response.json())
     .then(data => {
-      setSendingMessage(false)
-      alert("Message Sent!")
-      console.log('Success:', data);
+      if (data.created_at) {
+        console.log("success")
+        setSendingMessage(false)
+      } else {
+        setMessageErrors(data)
+        setSendingMessage(false)
+      }
+
     })
     .catch((error) => {
       setSendingMessage(false)
@@ -37,8 +43,12 @@ export default function Contact() {
       console.error('Error:', error);
     });
   }
-  
 
+  // const renderResponseErrors = (attribute) => {
+  //   attribute && attribute.forEach(error => error)
+  // }
+  
+  // console.log(renderResponseErrors(messageErrors.name))
   return (
     <div id="contact-container">
       <Container>
@@ -56,12 +66,12 @@ export default function Contact() {
             {/* content Start */}
             <div id="form-container">
             <form onSubmit={handleSubmit}>
-              {/* <label for="fname">Name:</label> <br></br> */}
-              <input className="text-input" type="text" id="contact-name" name="name" value={message.name} onChange={handleChange} placeholder="Name"/><br></br>
-              {/* <label for="lname">Email:</label><br></br> */}
-              <input className="text-input" type="email" id="contact-email" name="email" value={message.email} onChange={handleChange} placeholder="Email"/><br></br>
+              
+              <input className="text-input" type="text" id="contact-name" name="name" value={message.name} onChange={handleChange} placeholder={messageErrors.name ? messageErrors.name[0] : "Name"} required/><br></br>
+              
+              <input className="text-input" type="email" id="contact-email" name="email" value={message.email} onChange={handleChange} placeholder="Email" required/><br></br>
               {/* <label for="w3review">Message:</label><br></br> */}
-              <textarea placeholder="Message" className="text-area" id="contact-message" name="message" rows="4" cols="50" value={message.message} onChange={handleChange}/><br></br>
+              <textarea placeholder="Message" className="text-area" id="contact-message" name="message" rows="4" cols="50" value={message.message} onChange={handleChange} required/><br></br>
               {sendingMessage ? "Sending..." : <button id="contact-submit" type="submit"> Contact Me <Icon icon="bi:send"/> </button>}
             </form> 
             </div>

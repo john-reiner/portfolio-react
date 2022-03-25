@@ -4,7 +4,8 @@ import {Col, Row, Container, Image} from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function About(props) {
-  console.log(props)
+
+
   return (
     <div id="about-container" >
       <Container  >
@@ -42,11 +43,10 @@ export default function About(props) {
                 <div className="yellow-button"></div>
                 <div className="green-button"></div>
               </div>
-                <div className="window-bar-content">Hi! 👋 </div>
+                <div className="window-bar-content">{props.about.welcome_message}</div>
               </div>
               {/* content Start */}
                 <div id="about-text-container">
-                  <p>{props.about.welcome_message}</p>
                   <p>{props.about.about_me_text}</p>
                 </div>
               {/* {Content finish} */}
