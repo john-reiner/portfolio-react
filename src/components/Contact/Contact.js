@@ -19,7 +19,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSendingMessage(true)
-    fetch('http://localhost:3001/portfolios/1/messages.json', {
+    fetch('https://john-reiner-portfolio-manager.herokuapp.com/portfolios/1/messages.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export default function Contact() {
     .then(response => response.json())
     .then(data => {
       if (data.created_at) {
-        console.log("success")
+        alert("Message Sent!")
         setSendingMessage(false)
       } else {
         setMessageErrors(data)
@@ -44,11 +44,6 @@ export default function Contact() {
     });
   }
 
-  // const renderResponseErrors = (attribute) => {
-  //   attribute && attribute.forEach(error => error)
-  // }
-  
-  // console.log(renderResponseErrors(messageErrors.name))
   return (
     <div id="contact-container">
       <Container>

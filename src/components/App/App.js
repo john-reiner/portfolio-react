@@ -33,7 +33,7 @@ function App() {
   const handleShow = () => setShow(true);
 
   const fetchPortfolioPayload = () => {
-    fetch('http://localhost:3001/portfolios/1/public.json')
+    fetch('https://john-reiner-portfolio-manager.herokuapp.com/portfolios/1/public.json')
     .then(response => response.json())
     .then(data => setPortfolioPayload(data));
   }
@@ -41,21 +41,21 @@ function App() {
   const renderComponent = (index) => {
 
     const components = [
-        <Home setComponentIndex={setComponentIndex} resume_url={portfolioPayload.resume_url}/>,
-        <About about={portfolioPayload}/>,
-        <Projects projects={portfolioPayload.projects}/>,
-        <Skills skills={portfolioPayload.skills}/>,
-        <Contact />
+        [<Home setComponentIndex={setComponentIndex} resume_url={portfolioPayload.resume_url} />, "Home"],
+        [<About about={portfolioPayload}/>, "About"],
+        [<Projects projects={portfolioPayload.projects}/>, "Projects"],
+        [<Skills skills={portfolioPayload.skills}/>, "Skills"],
+        [<Contact />, "Contact"]
     ]
     return (
       components[index]
     )
   }
-  console.log(componentIndex)
+
   return (
     <div>
-      <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex).type.name}/>
-        {renderComponent(componentIndex)}
+      <NavBar handleShow={handleShow} pageName={renderComponent(componentIndex)[1]}/>
+        {renderComponent(componentIndex)[0]}
       <RightBar show={show} handleClose={handleClose} setComponentIndex={setComponentIndex} />
     </div>
   );
