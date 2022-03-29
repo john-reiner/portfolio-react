@@ -13,37 +13,36 @@
 
 .rightbar-link {
   color: #c7a579;
+  width: 100%;
   font-family: "Play", sans-serif;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: large;
   padding: .5em;
-  margin-bottom: 1em;
 }
 
 .rightbar-link:hover {
-  /* border: yellow solid; */
   cursor: pointer;
   background-color: #222;
 }
 
-.rightbar-link svg {
-  margin-right: 1em;
+.rightbar-link-item {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0%;
 }
 
-.rightbar-link p {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0;
+.rightbar-link-item:nth-child(1) {
+  margin-right: 2em;
 }
 
 #rightbar-social-row {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/RightBar.css'
-import {Offcanvas, Row } from 'react-bootstrap' 
+import {Offcanvas, Row, Col } from 'react-bootstrap' 
 import { Icon } from '@iconify/react';
 
 export default function RightBar(props) {
@@ -13,26 +13,30 @@ export default function RightBar(props) {
             <Offcanvas.Title id="rightbar-title">Portfolio</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-                <Row className="rightbar-link" onClick={() => props.setComponentIndex(0)}>
-                <Icon icon="ant-design:home-outlined" />
-                    <p>Home</p>
-                </Row>
-                <Row className="rightbar-link" onClick={() => props.setComponentIndex(1)}>
-                <Icon icon="cib:about-me" />
-                    <p>About</p>
-                </Row>
-                <Row className="rightbar-link" onClick={() => props.setComponentIndex(2)}>
-                    <Icon icon="bi:grid-3x2-gap-fill" />
-                    <p>Projects</p>
-                </Row>
-                <Row className="rightbar-link" onClick={() => props.setComponentIndex(3)}>
-                    <Icon icon="bi:hand-thumbs-up" />
-                    <p>Skills</p>
-                </Row>
-                <Row className="rightbar-link" onClick={() => props.setComponentIndex(4)}>
-                    <Icon icon="fluent:contact-card-16-regular" />
-                    <p>Contact</p>
-                </Row>
+                <div className="rightbar-link" onClick={() => props.setComponentIndex(0)}>
+                    <div className="rightbar-link-item"><Icon icon="ant-design:home-outlined" /></div>
+                    
+                    <p className="rightbar-link-item">Home</p>
+                
+                </div>
+                <div className="rightbar-link" onClick={() => props.setComponentIndex(1)}>
+                    <div className="rightbar-link-item"><Icon icon="cib:about-me" /></div>
+                    
+                    <p className="rightbar-link-item">About</p>
+                
+                </div>
+                <div className="rightbar-link" onClick={() => props.setComponentIndex(2)}>
+                    <div className="rightbar-link-item"><Icon icon="bi:grid-3x2-gap-fill" /></div>
+                    <p className="rightbar-link-item">Projects</p>
+                </div>
+                <div className="rightbar-link" onClick={() => props.setComponentIndex(3)}>
+                    <div className="rightbar-link-item"><Icon icon="bi:hand-thumbs-up" /></div>
+                    <p className="rightbar-link-item">Skills</p>
+                </div>
+                <div className="rightbar-link" onClick={() => props.setComponentIndex(4)}>
+                    <div className="rightbar-link-item"><Icon icon="fluent:contact-card-16-regular" /></div>
+                    <p className="rightbar-link-item">Contact</p>
+                </div>
                 <Row id="rightbar-social-row">
                     <a href="https://www.linkedin.com/in/john-reiner/" target="_blank" rel="noreferrer"  className="social-icon">
                         <Icon icon="fa:linkedin-square"  />

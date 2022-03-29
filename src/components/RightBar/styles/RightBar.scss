@@ -15,36 +15,42 @@
 
 .rightbar-link {
     color: $text-color;
+    width: 100%;
     font-family: $text-font;
     border-radius: 4px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     font-size: large;
     padding: .5em;
-    margin-bottom: 1em;
 }
 .rightbar-link:hover {
-    /* border: yellow solid; */
     cursor: pointer;
     background-color: #222;
-    // color: $red;
+}
+.rightbar-link-item {
+    width: fit-content;
+    margin: 0%;
 }
 
-.rightbar-link svg {
-    margin-right: 1em;
-    width: fit-content;
+.rightbar-link-item:nth-child(1) {
+    margin-right: 2em;
 }
-.rightbar-link p {
-    width: fit-content;
-    margin: 0;
-}
+
+// .rightbar-link svg {
+//     // margin-right: 1em;
+//     width: fit-content;
+// }
+// .rightbar-link p {
+//     width: fit-content;
+//     // margin: 0;
+// }
 
 #rightbar-social-row {
     position: absolute;
     bottom:0px;
     left:12px;
     width: fill;
-
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
