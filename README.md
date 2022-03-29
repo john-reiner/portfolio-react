@@ -12,6 +12,6 @@ My personal Portfolio where I showcase my skills, projects and experience. This 
   - Route 53
   - Cloudfront
 - Dynamically pulls README.md file from projects GitHub repo.
-- Contact form which generates a email sent to my personal email address, dynamically linked to the Portfolio Manager
+- Contact form which generates a email sent to my personal email address, dynamically linked to the Portfolio Manager.
 
 ### Visit: [https://www.john-reiner.com](https://www.john-reiner.com)
