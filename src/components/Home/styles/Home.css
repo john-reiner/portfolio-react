@@ -34,7 +34,7 @@
   color: #c7a579;
 }
 
-.buttons-home {
+#buttons-home {
   border: #c7a579 solid 2px;
   border-radius: 5px;
   font-size: 1.3em;
@@ -53,7 +53,7 @@
   text-decoration: none;
 }
 
-.buttons-home:hover {
+#buttons-home:hover {
   background-color: #111;
   cursor: pointer;
 }
@@ -75,5 +75,10 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+}
+
+#resume-link:hover {
+  background-color: #111;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Home.css.map */

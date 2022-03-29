@@ -24,8 +24,8 @@ export default function Home(props) {
                   {/* content Start */}
                   <div id="home-logo">
                     <Row>
-                      <Col><a id="resume-link" href={props.resume_url} download> Download Resume </a></Col>
-                      <Col><button className="buttons-home" onClick={() => props.setComponentIndex(4)} > Contact Me </button></Col>
+                      <Col sm={6} className="mb-2"><a id="resume-link" href={props.resume_url} download> Resume </a></Col>
+                      <Col sm={6} className="mb-2"><button id="buttons-home" onClick={() => props.setComponentIndex(4)} > Contact </button></Col>
                     </Row>
                     <hr></hr>
                     <h1 id="name">John Reiner</h1>

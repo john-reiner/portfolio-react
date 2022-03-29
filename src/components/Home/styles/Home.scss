@@ -21,15 +21,20 @@
     color: $text-color;
 }
 
-.buttons-home {
+#buttons-home {
     @include button($text-color, $screen-color, $red);
 }
 
-.buttons-home:hover {
+#buttons-home:hover {
     background-color: #111;
     cursor: pointer;
 }
 
 #resume-link {
     @include button($text-color, $screen-color, $red);
+}
+
+#resume-link:hover {
+    background-color: #111;
+    cursor: pointer;
 }
