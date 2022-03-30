@@ -9,12 +9,18 @@ export default function Projects(props) {
   const [selectedProject, setSelectedProject] = useState(null);
   const [project, setProject] = useState({});
 
+
+  const findProject = (id) => {
+    let project = props.projects.find(project => project.id === id)
+      setProject(project)
+  }
+  
   useEffect(() => {
     if (selectedProject != null) {
       findProject(selectedProject)
     }
-  }, [selectedProject]);
-
+  }, [selectedProject, findProject]);
+  
   const handleProjectModalShow = (id) => {
     setSelectedProject(id)
     setProjectModalShow(true)
@@ -45,10 +51,6 @@ export default function Projects(props) {
   }
 
   
-  const findProject = (id) => {
-    let project = props.projects.find(project => project.id === id)
-    setProject(project)
-  }
 
   return (
       <Container fluid id="projects-container">

@@ -7,18 +7,19 @@ import { Icon } from '@iconify/react';
 export default function ProjectModal(props) {
 
     const [githubmd, setGithubmd] = useState('');
-
-    useEffect(() => {
-        if (props.project.github) {
-            fetchGithubReadme()
-        }
-    }, [props.project.github]);
-
+    
     const fetchGithubReadme = () => {
         fetch(`https://raw.githubusercontent.com/${props.project.github.slice(19)}/main/README.md`)
         .then(response => response.text())
         .then(markdown => setGithubmd(markdown))
     }
+    
+    useEffect(() => {
+        if (props.project.github) {
+            fetchGithubReadme()
+        }
+    }, [props.project.github, fetchGithubReadme]);
+
 
     const renderCarouselItems = () => {
         if (props.project.images) {

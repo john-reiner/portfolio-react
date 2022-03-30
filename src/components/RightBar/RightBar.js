@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/RightBar.css'
-import {Offcanvas, Row, Col } from 'react-bootstrap' 
+import {Offcanvas, Row } from 'react-bootstrap' 
 import { Icon } from '@iconify/react';
 
 export default function RightBar(props) {

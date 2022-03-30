@@ -23,9 +23,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (show) {
-      setShow(false)
-    }
+    handleClose()
   }, [componentIndex]);
 
   // Functions
