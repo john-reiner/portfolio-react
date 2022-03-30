@@ -26,17 +26,13 @@
     font-size: 1.5em;
     justify-content: space-between;
     align-items: center;
-    padding: 0.1em;
     margin: 0;
     font-family: $text-font;
     color: $text-color;
+    margin-bottom: .5em;
 }
 
-.skill svg{
-    width: fit-content;
-}
-
-.skill p{
+.skill-item{
     width: fit-content;
     margin: 0%;
 }
